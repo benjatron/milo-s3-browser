@@ -10,4 +10,12 @@ Text Domain:  milo
 */
 
 // Load AWS SDK files
-require(dirname(__FILE__) . 'aws/aws-autoloader.php');
+require(dirname(__FILE__) . '/aws/aws-autoloader.php');
+
+use Aws\S3\S3Client;
+use Aws\Credentials\Credentials;
+use Aws\S3\Exception\S3Exception;
+
+// Load admin dashboard files
+require(dirname(__FILE__) . '/admin/functions.php');
+require(dirname(__FILE__) . '/admin/settings-page.php');
