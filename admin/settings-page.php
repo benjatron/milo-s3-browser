@@ -23,7 +23,7 @@ function milo_s3_browse_display_settings() {
         The simplest way to show a bucket is with a shortcode, with the following format: <code>[milos3browser bucket=s3-bucket-name]</code>
       </p>
       <p>
-        Huge thanks to Dan Dulaney aka <a href="https://github.com/duplaja">duplaja</a> for making his S3 bucket browser plugin open for public scrutiny. This plugin would not exist without it.
+        Huge thanks to Dan Dulaney aka <a href="https://github.com/duplaja" target="_blank">duplaja</a> for making his S3 bucket browser plugin open for public scrutiny. This plugin would not exist without it.
       </p>
 
       <table class="form-table">
