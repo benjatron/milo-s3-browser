@@ -13,8 +13,9 @@ Text Domain:  milo
 require(dirname(__FILE__) . '/aws/aws-autoloader.php');
 
 use Aws\S3\S3Client;
-use Aws\Credentials\Credentials;
-use Aws\S3\Exception\S3Exception;
+
+use GuzzleHttp\Promise;
+use GuzzleHttp\Promise\RejectedPromise;
 
 // Load admin dashboard files
 require(dirname(__FILE__) . '/admin/functions.php');
