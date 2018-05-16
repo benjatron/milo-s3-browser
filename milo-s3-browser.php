@@ -10,16 +10,11 @@ Text Domain:  milo
 */
 
 // Load AWS SDK files
-require(dirname(__FILE__) . '/aws/aws-autoloader.php');
-
-use Aws\S3\S3Client;
-
-use GuzzleHttp\Promise;
-use GuzzleHttp\Promise\RejectedPromise;
+require 'vendor/autoload.php';
 
 // Load admin dashboard files
-require(dirname(__FILE__) . '/admin/functions.php');
-require(dirname(__FILE__) . '/admin/settings-page.php');
+require (dirname(__FILE__) . '/admin/functions.php');
+require (dirname(__FILE__) . '/admin/settings-page.php');
 
 // Load public files
-require(dirname(__FILE__) . '/public/shortcode.php');
+require (dirname(__FILE__) . '/public/shortcode.php');
