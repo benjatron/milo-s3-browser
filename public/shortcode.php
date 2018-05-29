@@ -1,6 +1,8 @@
 <?php
 
 use Aws\S3\S3Client;
+use Aws\Credentials\Credentials;
+use Aws\S3\Exception\S3Exception;
 
 // Shortcode to display S3 bucket
 function milo_s3_browser_shortcode_display($atts) {
@@ -15,12 +17,8 @@ function milo_s3_browser_shortcode_display($atts) {
     'version' => 'latest',
     'credentials' => $credentials
   ]);
-  $buckets = $s3Client->listBuckets();
-  foreach ($buckets['Buckets'] as $bucket){
-	  echo $bucket['Name']."\n";
-  }
 
-  // If no bucket name is specified for the shortcode, set default
+  // If no bucket name is specified for the shortcode, display error
   $atts = shortcode_atts( array('bucket' => 'none'), $atts, 's3browse' );
   $bucket = $atts['bucket'];
   if( $bucket == 'none' ):
@@ -28,17 +26,6 @@ function milo_s3_browser_shortcode_display($atts) {
   endif;
 
   // Displays the bucket browser
-  ?>
-  <div class="o-fileBrowser">
-    <div class="o-fileBrowser__manager">
-      <ul class="m-fileList">
-        <li>Filename: </li>
-        <li>Download</li>
-      </ul>
-
-    </div>
-  </div>
-  <?php
-
+  require('browser.php');
 }
 add_shortcode('milos3browser', 'milo_s3_browser_shortcode_display');
