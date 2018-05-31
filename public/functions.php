@@ -1,6 +1,11 @@
 <?php
 // Functions used on the front-end
 
+// SVG importer
+function get_svg( $file ) {
+  echo file_get_contents( plugins_url() . '/milo-s3-browser/assets/svg/' . $file . '.svg');
+}
+
 // Function to format sizes from bytes to KB, MB, GB, or TB
 // @link: https://stackoverflow.com/questions/2510434/format-bytes-to-kilobytes-megabytes-gigabytes/2510459
 function formatBytes($bytes, $precision = 2) {
@@ -44,11 +49,17 @@ function milo_directory($directory, &$objectArray) {
     ?>
       <li class="m-fileList__item m-fileList__item--hasChildren">
         <div class="a-fileFolder">
+          <svg class="a-fileFolder__icon" viewBox="0 0 16 16">
+            <?php get_svg('folder'); ?>
+          </svg>
+          <svg class="a-fileFolder__icon --is-hidden" viewBox="0 0 16 16">
+            <?php get_svg('folder-open'); ?>
+          </svg>
           <?php echo $item; ?><br/>
-          <ul class="m-fileList">
+        </div>
+        <ul class="m-fileList">
             <?php milo_directory($directory[$item]['children'], $objectArray); ?>
           </ul>
-        </div>
       </li>
     <?php
     // If $item is a normal file, display that
@@ -58,6 +69,27 @@ function milo_directory($directory, &$objectArray) {
       $link = $directory[$item]['link'];
       $name = $directory[$item]['name'];
       $size = $directory[$item]['size'];
+
+      $fileTypes = array(
+        'archive' => array(
+          '7z', 'arj', 'deb', 'gz', 'milo', 'pkg', 'rar', 'rpm', 'tar', 'z', 'zip'
+        ),
+        'audio' => array(
+          'aif', 'cda', 'mid', 'midi', 'mp3', 'mpa', 'ogg', 'wav', 'wma', 'wpl'
+        ),
+        'document' => array(
+          'key', 'odp', 'pps', 'ppt', 'pptx', 'ods', 'xlr', 'xls', 'xlsx', 'doc', 'docx', 'rtf', 'tex', 'txt', 'wks', 'wps', 'wpd'
+        ),
+        'image' => array(
+          'ai', 'bmp', 'eps', 'gif', 'ico', 'jpg', 'jpeg', 'png', 'ps', 'psd', 'svg', 'tif', 'tiff'
+        ),
+        'pdf' => array(
+          'pdf'
+        ),
+        'video' => array(
+          '3g2', '3gp', 'avi', 'flv', 'h264', 'm4v', 'mkv', 'mov', 'mp4', 'mpg', 'mpeg', 'rm', 'swf', 'vob', 'wmv'
+        ),
+      );
 
       // If the file is a description .txt file, skip it
       if( $name == ($objectArray[$id-1]['name'] . '.txt') ):
@@ -69,6 +101,27 @@ function milo_directory($directory, &$objectArray) {
       <li id="miloFile-<?php echo $id; ?>" class="m-fileList__item">
         <div class="a-browserItem">
           <h3 class="a-browserItem__file">
+            <svg class="a-browserItem__icon" viewBox="0 0 16 16">
+            <?php
+              // Retrieves the icon based on file extension
+              $ext = end(explode('.', $name));
+              if( in_array( $ext, $fileTypes['archive'] ) ):
+                get_svg('file-archive');
+              elseif( in_array( $ext, $fileTypes['audio'] ) ):
+                get_svg('file-audio');
+              elseif( in_array( $ext, $fileTypes['document'] ) ):
+                get_svg('file-alt');
+              elseif( in_array( $ext, $fileTypes['image'] ) ):
+                get_svg('file-image');
+              elseif( in_array( $ext, $fileTypes['pdf'] ) ):
+                get_svg('file-pdf');
+              elseif( in_array( $ext, $fileTypes['video'] ) ):
+                get_svg('file-video');
+              else:
+                get_svg('file');
+              endif;
+            ?>
+            </svg>
             <?php echo $name; ?>
           </h3>
           <h4 class="a-browserItem__text">
