@@ -153,6 +153,6 @@ function milo_directory($directory, &$objectArray) {
 
   // Closes the encapsulating list
   ?>
-  </ul>;
+  </ul>
   <?php
 }
