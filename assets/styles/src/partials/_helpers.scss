@@ -1,0 +1,9 @@
+// Preloader
+@mixin preload() {
+  left: -10000px;
+  position: absolute;
+}
+
+.--preload {
+  @include preload();
+}
