@@ -41,12 +41,16 @@ function milo_directory($directory, &$objectArray) {
   foreach( array_keys($directory) as $item ):
     // If $item has children (i.e. is a directory), repeat the function on it
     if( $directory[$item]['children'] ):
-      echo '<li class="m-fileList__item m-fileList__item--hasChildren">';
-      echo $item . ' has files:<br/>';
-      echo '<ul class="m-fileList">';
-      milo_directory($directory[$item]['children'], $objectArray);
-      echo '</ul>';
-      echo '</li>';
+    ?>
+      <li class="m-fileList__item m-fileList__item--hasChildren">
+        <div class="a-fileFolder">
+          <?php echo $item; ?><br/>
+          <ul class="m-fileList">
+            <?php milo_directory($directory[$item]['children'], $objectArray); ?>
+          </ul>
+        </div>
+      </li>
+    <?php
     // If $item is a normal file, display that
     else:
       $description = '';
@@ -61,19 +65,41 @@ function milo_directory($directory, &$objectArray) {
       endif;
 
       // Creates the list item for the file
-      echo '<li id="miloFile-' . $id . '" class="m-fileList__item">';
-      echo 'Filename: ' . $name . '<br/>';
-      echo 'File size: ' . formatBytes($size) . '<br/>';
-      echo 'Download Time: ' . downloadTime($size) . '<br/>';
-      // If there is a description, display it
-      if( $objectArray[$id+1]['name'] == ($name . '.txt') ):
-        echo 'Description: ' . file_get_contents($objectArray[$id+1]['link']) . '<br/>';
-      endif;
-      echo '<a href="' . $link . '" target="_blank" download>Download</a>';
-      echo '</li>';
+      ?>
+      <li id="miloFile-<?php echo $id; ?>" class="m-fileList__item">
+        <div class="a-browserItem">
+          <h3 class="a-browserItem__file">
+            <?php echo $name; ?>
+          </h3>
+          <h4 class="a-browserItem__text">
+            Size: <?php echo formatBytes($size); ?>
+          </h4>
+          <h4 class="a-browserItem__text">
+            Time: <?php echo downloadTime($size); ?>
+          </h4>
+        </div>
+        <div class="a-browserButton">
+          <a class="a-browserButton__link" href="<?php echo $link; ?>" target="_blank" download>Download</a>
+        </div>
+        <?php
+        // If there is a description, display it
+        if( $objectArray[$id+1]['name'] == ($name . '.txt') ):
+        ?>
+        <div class="a-browserDescription">
+          <p class="a-browserDescription__text">
+            Description: <?php echo file_get_contents($objectArray[$id+1]['link']); ?>
+          </p>
+        </div>
+        <?php
+        endif;
+        ?>
+      </li>
+    <?php
     endif;
   endforeach;
 
   // Closes the encapsulating list
-  echo '</ul>';
+  ?>
+  </ul>;
+  <?php
 }
