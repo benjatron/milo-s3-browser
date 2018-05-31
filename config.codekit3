@@ -217,6 +217,50 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/scripts\/dist\/main.min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/scripts\/dist\/main.min.min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 1
+		},
+	"\/assets\/scripts\/dist\/main.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/scripts\/dist\/main.min.js.map",
+		"oF": 0
+		},
+	"\/assets\/scripts\/src\/main.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/scripts\/dist\/main.min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 1
+		},
+	"\/assets\/styles\/dist\/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/styles\/dist\/main-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/styles\/dist\/main.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/styles\/dist\/main.css.map",
+		"oF": 0
+		},
 	"\/assets\/styles\/src\/main.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -225,7 +269,59 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "\/assets\/styles\/css\/main.css",
+		"oAP": "\/assets\/styles\/dist\/main.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/styles\/src\/partials\/_helpers.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/src\/dist\/_helpers.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/styles\/src\/partials\/_variables.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/src\/dist\/_variables.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/styles\/src\/partials\/molecules\/_m-fileList.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/src\/partials\/dist\/_m-fileList.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/styles\/src\/partials\/organisms\/_o-fileBrowser.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/src\/partials\/dist\/_o-fileBrowser.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -2143,7 +2239,7 @@
 		"autoOutputPathStyle": 2,
 		"createSourceMap": 1,
 		"minifyOutput": 1,
-		"syntaxCheckerStyle": 3,
+		"syntaxCheckerStyle": 0,
 		"transpilerStyle": 1
 		},
 	"languageDefaultsJSON": {
@@ -2237,7 +2333,7 @@
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
-		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathRelativePath": "..\/dist",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 2,
