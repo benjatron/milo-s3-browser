@@ -3,7 +3,7 @@
 
 // SVG importer
 function get_svg( $file ) {
-  echo file_get_contents( plugins_url() . '/milo-s3-browser/assets/svg/' . $file . '.svg');
+  echo file_get_contents( plugins_url() . '/milo-s3-browser/assets/images/dist/' . $file . '.svg');
 }
 
 // Function to format sizes from bytes to KB, MB, GB, or TB
