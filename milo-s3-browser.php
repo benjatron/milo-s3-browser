@@ -17,4 +17,5 @@ require (dirname(__FILE__) . '/admin/functions.php');
 require (dirname(__FILE__) . '/admin/settings-page.php');
 
 // Load public files
+require (dirname(__FILE__) . '/public/functions.php');
 require (dirname(__FILE__) . '/public/shortcode.php');

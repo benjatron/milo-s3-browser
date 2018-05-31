@@ -1,14 +1,10 @@
 <?php
-// Reset current path
-$directory = '';
-
 // If a bucket name has been specified, iterate that
 $objects = $s3Client->getIterator('ListObjectsV2',
   [
     'Bucket' => $bucket
   ]
 );
-
 
 // Creates arrays of paths, sizes, and links
 $pathArray = array();
@@ -87,8 +83,13 @@ endforeach;
 // We don't need the top level, just take the children within $childrenTree
 $directoryTree = ($childrenTree['children']);
 
+// Displays the file browser
 ?>
 <div class="o-fileBrowser">
   <div class="o-fileBrowser__manager">
+      <?php
+        milo_directory($directoryTree, $objectArray);
+        // print_r($objectArray);
+      ?>
   </div>
 </div>
