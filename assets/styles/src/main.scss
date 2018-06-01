@@ -2,6 +2,8 @@
 @import 'partials/helpers';
 
 // Atoms
+@import 'partials/atoms/a-browserItem.scss';
+@import 'partials/atoms/a-fileFolder.scss';
 
 // Molecules
 @import 'partials/molecules/m-fileList';
