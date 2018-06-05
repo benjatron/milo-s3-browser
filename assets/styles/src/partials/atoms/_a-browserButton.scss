@@ -1,0 +1,25 @@
+// Styles for the browser button
+.a-browserButton {
+  height: 100%;
+  width: 8rem;
+
+  .a-browserButton__link {
+    align-content: center;
+    background-color: $blue-light-clear;
+    color: $white-clear;
+    display: flex;
+    flex-direction: column;
+    height: 3.375rem;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color 700ms ease,
+      color 700ms ease;
+    width: 100%;
+
+    &.--is-hovered {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+}

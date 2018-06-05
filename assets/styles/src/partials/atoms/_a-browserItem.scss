@@ -1,8 +1,55 @@
 // Styles for browser items
 .a-browserItem {
+  align-content: center;
+  background-color: $blue-light-clear;
+  display: flex;
+  flex-wrap: wrap;
+  padding: .5rem;
+  transition: background-color 700ms ease;
+  width: calc(100% - 8rem);
+
+  &:hover {
+    background-color: $blue-light;
+  }
+
+  &.--is-hovered {
+    background-color: $blue-light;
+  }
 
   .a-browserItem__icon {
     height: 2rem;
     width: 2rem;
+
+    svg {
+      fill: $gray;
+      transition: fill 700ms ease;
+    }
+
+    &.--is-hovered {
+      svg {
+        fill: $blue;
+      }
+    }
+  }
+
+  .a-browserItem__text {
+    color: $gray;
+    font-weight: 400;
+    margin: 0;
+    padding-left: .5rem;
+    transition: color 700ms ease;
+
+    &.--is-hovered {
+      color: $blue;
+    }
+
+    .a-browserItem__text--spacer {
+      height: .25rem;
+      padding-right: 1.2rem;
+    }
+
+    .a-browserItem__text--title {
+      font-weight: 600;
+    }
   }
 }
