@@ -1,4 +1,12 @@
 // File list styles
 .m-fileList {
   list-style-type: none;
+  padding-inline-start: .67rem;
+  width: 100%;
+
+  .m-fileList__item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }
