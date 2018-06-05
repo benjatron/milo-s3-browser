@@ -1,10 +1,12 @@
 // Styles for browser items
 .a-browserItem {
-  align-content: center;
+  align-content: space-around;
   background-color: $blue-light-clear;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  padding: .5rem;
+  height: 3.375rem;
   transition: background-color 700ms ease;
   width: calc(100% - 8rem);
 
@@ -17,6 +19,7 @@
   }
 
   .a-browserItem__icon {
+    margin: auto .5rem;
     height: 2rem;
     width: 2rem;
 
@@ -35,7 +38,6 @@
   .a-browserItem__text {
     color: $gray;
     font-weight: 400;
-    margin: 0;
     padding-left: .5rem;
     transition: color 700ms ease;
 
