@@ -300,6 +300,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/assets\/styles\/src\/partials\/atoms\/_a-browserButton.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/src\/partials\/dist\/_a-browserButton.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/assets\/styles\/src\/partials\/atoms\/_a-browserItem.scss": {
 		"aP": 1,
 		"bl": 0,
