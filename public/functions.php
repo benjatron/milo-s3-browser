@@ -52,14 +52,16 @@ function milo_directory($directory, &$objectArray) {
           <svg class="a-fileFolder__icon" viewBox="0 0 16 16">
             <?php get_svg('folder'); ?>
           </svg>
-          <svg class="a-fileFolder__icon --is-hidden" viewBox="0 0 16 16">
+          <svg class="a-fileFolder__icon a-fileFolder__icon--open --is-hidden" viewBox="0 0 16 16">
             <?php get_svg('folder-open'); ?>
           </svg>
-          <?php echo $item; ?><br/>
+          <h3 class="a-fileFolder__folder">
+            <?php echo $item; ?>
+          </h3>
         </div>
-        <ul class="m-fileList">
-            <?php milo_directory($directory[$item]['children'], $objectArray); ?>
-          </ul>
+        <ul class="m-fileList --preload">
+          <?php milo_directory($directory[$item]['children'], $objectArray); ?>
+        </ul>
       </li>
     <?php
     // If $item is a normal file, display that
@@ -100,8 +102,7 @@ function milo_directory($directory, &$objectArray) {
       ?>
       <li id="miloFile-<?php echo $id; ?>" class="m-fileList__item">
         <div class="a-browserItem">
-          <h3 class="a-browserItem__file">
-            <svg class="a-browserItem__icon" viewBox="0 0 16 16">
+          <svg class="a-browserItem__icon" viewBox="0 0 16 16">
             <?php
               // Retrieves the icon based on file extension
               $ext = end(explode('.', $name));
@@ -122,25 +123,34 @@ function milo_directory($directory, &$objectArray) {
               endif;
             ?>
             </svg>
-            <?php echo $name; ?>
+          <h3 class="a-browserItem__text">
+            <span class="a-browserItem__text--title"><?php echo $name; ?></span>
+            <br/>
+            Size: <?php echo formatBytes($size); ?><span class="a-browserItem__text--spacer"></span>Time: <?php echo downloadTime($size); ?>
           </h3>
-          <h4 class="a-browserItem__text">
-            Size: <?php echo formatBytes($size); ?>
-          </h4>
-          <h4 class="a-browserItem__text">
-            Time: <?php echo downloadTime($size); ?>
-          </h4>
         </div>
-        <div class="a-browserButton">
-          <a class="a-browserButton__link" href="<?php echo $link; ?>" target="_blank" download>Download</a>
-        </div>
+        <a class="a-browserButton" href="<?php echo $link; ?>" target="_blank" download>
+          <div class="a-browserButton__link">Download</div>
+        </a>
+
         <?php
         // If there is a description, display it
         if( $objectArray[$id+1]['name'] == ($name . '.txt') ):
         ?>
         <div class="a-browserDescription">
-          <p class="a-browserDescription__text">
-            Description: <?php echo file_get_contents($objectArray[$id+1]['link']); ?>
+          <svg class="a-browserDescription__toggle" viewBox="0 0 16 16">
+            <path
+              d=" M 0,0
+                  L 16,8
+                  L 0,16
+                "
+            />
+          </svg>
+          <h4 class="a-browserDescription__title">
+            Description
+          </h4>
+          <p class="a-browserDescription__body">
+            <?php echo file_get_contents($objectArray[$id+1]['link']); ?>
           </p>
         </div>
         <?php
