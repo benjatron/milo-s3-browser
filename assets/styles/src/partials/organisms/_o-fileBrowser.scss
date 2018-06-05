@@ -1,4 +1,9 @@
 // File browser styles
 .o-fileBrowser {
   display: flex;
+  font-family: $font-industry;
+
+  .o-fileBrowser__manager {
+    width: 100%;
+  }
 }
