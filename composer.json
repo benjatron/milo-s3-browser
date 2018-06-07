@@ -2,6 +2,7 @@
   "name": "MILO S3 Browser",
   "description": "A browser for MILO Range S3 buckets",
   "require":{
-    "aws/aws-sdk-php": "3.56.*"
+    "aws/aws-sdk-php": "3.56.*",
+    "paragonie/random_compat": "<9.99"
   }
 }
