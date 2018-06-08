@@ -21,6 +21,8 @@ function milo_register_scripts() {
 add_action( 'wp_enqueue_scripts', 'milo_register_scripts');
 
 // Load admin dashboard files
+require (dirname(__FILE__) . '/admin/acf.php');
+require (dirname(__FILE__) . '/admin/custom-post-types.php');
 require (dirname(__FILE__) . '/admin/functions.php');
 require (dirname(__FILE__) . '/admin/settings-page.php');
 
