@@ -149,7 +149,7 @@ function milo_directory($directory, &$objectArray) {
           <h4 class="a-browserDescription__title">
             Description
           </h4>
-          <p class="a-browserDescription__body">
+          <p class="a-browserDescription__body --preload">
             <?php echo file_get_contents($objectArray[$id+1]['link']); ?>
           </p>
         </div>
