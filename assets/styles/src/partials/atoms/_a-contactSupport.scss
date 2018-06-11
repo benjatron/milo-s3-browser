@@ -1,0 +1,25 @@
+// Styling for the contact block
+.a-contactSupport {
+  .a-contactSupport__headline {
+    color: $gray-dark;
+    font-size: 1.2rem;
+    font-family: $font-industry;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .a-contactSupport__description {
+    margin: 0;
+    padding: 1rem 0 0;
+  }
+
+  .a-contactSupport__email {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .a-contactSupport__phone {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+}

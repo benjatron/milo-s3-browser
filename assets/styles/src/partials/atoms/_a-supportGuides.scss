@@ -1,0 +1,26 @@
+// Styles for the support guide block in the sidebar
+.a-supportGuides {
+  .a-supportGuides__headline {
+    color: $gray-dark;
+    font-size: 1.2rem;
+    font-family: $font-industry;
+    text-transform: uppercase;
+  }
+
+  .a-supportGuides__link {
+    background-color: $blue;
+    color: $white;
+    font-size: .6rem;
+    letter-spacing: .125rem;
+    margin: 0 0 .5rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    transition: background-color 700ms ease,
+      color 700ms ease;
+
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
+  }
+}

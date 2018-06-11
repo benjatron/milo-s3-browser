@@ -1,0 +1,15 @@
+// Styling for bucket breadcrumbs
+.a-browserBreadcrumbs {
+  font-size: 1.6rem;
+  font-weight: 200;
+  text-transform: uppercase;
+
+  .a-browserBreadcrumbs__separator {
+    padding: 0 .25rem;
+  }
+
+  .a-browserBreadcrumbs__bucket {
+    color: $blue;
+    font-weight: 600;
+  }
+}

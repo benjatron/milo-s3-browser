@@ -51,7 +51,13 @@
     }
 
     .a-browserItem__text--title {
-      font-weight: 600;
+      color: $gray;
+      margin: 0 0 .25rem;
+      transition: color 700ms ease;
+
+      &.--is-hovered {
+        color: $blue;
+      }
     }
   }
 }

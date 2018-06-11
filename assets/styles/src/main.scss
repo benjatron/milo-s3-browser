@@ -2,12 +2,22 @@
 @import 'partials/helpers';
 
 // Atoms
-@import 'partials/atoms/a-browserButton.scss';
-@import 'partials/atoms/a-browserItem.scss';
-@import 'partials/atoms/a-fileFolder.scss';
+@import 'partials/atoms/a-browserBreadcrumbs';
+@import 'partials/atoms/a-browserButton';
+@import 'partials/atoms/a-browserDescription';
+@import 'partials/atoms/a-browserItem';
+@import 'partials/atoms/a-contactSupport';
+@import 'partials/atoms/a-explorerDownload';
+@import 'partials/atoms/a-fileFolder';
+@import 'partials/atoms/a-supportGuides';
 
 // Molecules
+@import 'partials/molecules/m-browserForm';
 @import 'partials/molecules/m-fileList';
+@import 'partials/molecules/m-gridCell';
 
 // Organisms
+@import 'partials/organisms/o-browserDashboard';
+@import 'partials/organisms/o-browserLogin';
+@import 'partials/organisms/o-browserSidebar';
 @import 'partials/organisms/o-fileBrowser';

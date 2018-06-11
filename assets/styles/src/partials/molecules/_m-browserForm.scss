@@ -1,0 +1,57 @@
+// Styles for the password protection form
+.m-browserForm {
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+
+  .m-browserForm__label {
+    &.m-browserForm__label--password {
+      font-size: .8rem;
+      font-weight: 600;
+      letter-spacing: .0625rem;
+      text-align: left;
+      text-transform: uppercase;
+      width: 100%;
+    }
+
+    &.m-browserForm__label--check {
+      font-weight: 400;
+      margin: auto 0;
+      width: calc( 100% - 3rem);
+    }
+  }
+
+  .m-browserForm__pass {
+    padding: 1rem !important;
+
+    &::placeholder {
+      color: $gray-dark;
+    }
+  }
+
+  .m-browserForm__checkbox {
+    height: 3rem;
+    margin: 0;
+    width: 3rem;
+  }
+
+  .m-browserForm__link {
+    color: $blue-bright;
+  }
+
+  .m-browserForm__button[type="submit"] {
+    background-color: $blue-bright;
+    margin: 1rem 0 0;
+    pointer-events: all;
+    transition: background-color 700ms ease;
+    width: 100%;
+
+    &.--inactive {
+      background-color: $gray-dark;
+      pointer-events: none;
+    }
+  }
+}

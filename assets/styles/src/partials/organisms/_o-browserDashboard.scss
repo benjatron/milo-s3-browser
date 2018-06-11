@@ -1,0 +1,20 @@
+// Styles for the main browser area
+.o-browserDashboard {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 2rem 0;
+  width: 100%;
+
+  .o-browserDashboard__grid {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem 0;
+    width: 100%;
+  }
+
+  .o-browserDashboard__fileManager {
+    width: 100%;
+  }
+}

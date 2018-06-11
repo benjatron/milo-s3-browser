@@ -89,7 +89,6 @@ $directoryTree = ($childrenTree['children']);
   <div class="o-fileBrowser__manager">
       <?php
         milo_directory($directoryTree, $objectArray);
-        // print_r($objectArray);
       ?>
   </div>
 </div>

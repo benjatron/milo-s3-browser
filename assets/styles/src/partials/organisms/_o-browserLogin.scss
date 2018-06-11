@@ -1,0 +1,36 @@
+// Styles for the browser login form block
+.o-browserLogin {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 640px;
+  width: 100%;
+
+  .o-browserLogin__heading{
+    font-family: $font-industry;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+  }
+  .o-browserLogin__subhead {
+    text-align: center;
+  }
+
+  .o-browserLogin__description {
+    padding: 1rem 0;
+  }
+
+  .o-browserLogin__form {
+    margin: 0 auto;
+    max-width: 560px;
+    width: 100%;
+  }
+
+  .o-browserLogin__disclosure {
+    padding: 2rem 0 4rem;
+    text-align: center;
+  }
+}

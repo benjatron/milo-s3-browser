@@ -23,6 +23,20 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/admin\/acf.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/admin\/acf.php",
+		"oF": 0
+		},
+	"\/admin\/custom-post-types.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/admin\/custom-post-types.php",
+		"oF": 0
+		},
 	"\/admin\/functions.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -127,6 +141,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/images\/dist\/ie-logo.png": {
+		"ft": 32768,
+		"iS": 69821,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/ie-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/images\/src\/file-alt.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -217,6 +242,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/images\/src\/ie-logo.png": {
+		"ft": 32768,
+		"iS": 16314,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/ie-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/scripts\/dist\/main.min.js": {
 		"ft": 64,
 		"ma": 1,
@@ -300,6 +336,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/assets\/styles\/src\/partials\/atoms\/_a-browserBreadcrumbs.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/src\/partials\/dist\/_a-browserBreadcrumbs.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/assets\/styles\/src\/partials\/atoms\/_a-browserButton.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -309,6 +358,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/assets\/styles\/src\/partials\/dist\/_a-browserButton.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/styles\/src\/partials\/atoms\/_a-browserDescription.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/src\/partials\/dist\/_a-browserDescription.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -326,6 +388,32 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/assets\/styles\/src\/partials\/atoms\/_a-contactSupport.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/src\/partials\/dist\/_a-contactSupport.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/styles\/src\/partials\/atoms\/_a-explorerDownload.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/src\/partials\/dist\/_a-explorerDownload.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/assets\/styles\/src\/partials\/atoms\/_a-fileFolder.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -339,6 +427,32 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/assets\/styles\/src\/partials\/atoms\/_a-supportGuides.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/src\/partials\/dist\/_a-supportGuides.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/styles\/src\/partials\/molecules\/_m-browserForm.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/src\/partials\/dist\/_m-browserForm.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/assets\/styles\/src\/partials\/molecules\/_m-fileList.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -348,6 +462,58 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/assets\/styles\/src\/partials\/dist\/_m-fileList.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/styles\/src\/partials\/molecules\/_m-gridCell.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/src\/partials\/dist\/_m-gridCell.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/styles\/src\/partials\/organisms\/_o-browserDashboard.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/src\/partials\/dist\/_o-browserDashboard.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/styles\/src\/partials\/organisms\/_o-browserLogin.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/src\/partials\/dist\/_o-browserLogin.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/styles\/src\/partials\/organisms\/_o-browserSidebar.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/src\/partials\/dist\/_o-browserSidebar.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -420,6 +586,48 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/public\/shortcode.php",
+		"oF": 0
+		},
+	"\/public\/templates\/archive-downloads.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/templates\/archive-downloads.php",
+		"oF": 0
+		},
+	"\/public\/templates\/parts\/dashboard.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/templates\/parts\/dashboard.php",
+		"oF": 0
+		},
+	"\/public\/templates\/parts\/directory.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/templates\/parts\/directory.php",
+		"oF": 0
+		},
+	"\/public\/templates\/parts\/login.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/templates\/parts\/login.php",
+		"oF": 0
+		},
+	"\/public\/templates\/parts\/sidebar.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/templates\/parts\/sidebar.php",
+		"oF": 0
+		},
+	"\/public\/templates\/single-downloads.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/templates\/single-downloads.php",
 		"oF": 0
 		},
 	"\/README.md": {
@@ -2351,10 +2559,10 @@
 	"languageDefaultsPNG": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.png",
-		"autoOutputPathRelativePath": "",
+		"autoOutputPathRelativePath": "..\/dist",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 2,
 		"optimizerType": 1,
 		"quality": 100
 		},

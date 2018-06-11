@@ -1,0 +1,31 @@
+// Styles for the IE instructions block
+.a-explorerDownload {
+  background-color: $gray;
+  color: $white;
+  padding: 1rem 2rem;
+
+  .a-explorerDownload__headline {
+    font-weight: 300;
+    margin: 0;
+  }
+
+  .a-explorerDownload__logo {
+    margin: .5rem 0;
+  }
+
+  .a-explorerDownload__link {
+    background-color: $blue;
+    color: $white;
+    font-size: .6rem;
+    letter-spacing: .125rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    transition: background-color 700ms ease,
+      color 700ms ease;
+
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
+  }
+}

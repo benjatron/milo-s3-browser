@@ -1,0 +1,14 @@
+// Styles for the browser page sidebars
+.o-browserSidebar {
+  align-content: center;
+  background-color: $gray-medium;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+  text-align: center;
+  width: 360px;
+
+  .o-browserSidebar__section {
+    padding: 2rem 2rem 0;
+  }
+}
