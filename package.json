@@ -1,0 +1,28 @@
+{
+  "name": "milo-s3-browser",
+  "version": "1.0.0",
+  "description": "AWS-connected file browser with content protection and server-managed security",
+  "main": "milo-s3-browser.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjatron/milo-s3-browser.git"
+  },
+  "keywords": [
+    "wordpress",
+    "s3",
+    "aws",
+    "plugin"
+  ],
+  "author": "Benjatron",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/benjatron/milo-s3-browser/issues"
+  },
+  "homepage": "https://github.com/benjatron/milo-s3-browser#readme",
+  "dependencies": {
+    "dialog-polyfill": "^0.4.9"
+  }
+}
