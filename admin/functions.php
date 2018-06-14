@@ -1,4 +1,12 @@
 <?php
+// The values necessary for the plugin
+$milo_adminSettings = array(
+  'aws_key',
+  'aws_secret',
+  'aws_region',
+  'milo_generated_key'
+);
+
 // Creates a menu item for the S3 browser plugin and settings pages
 function milo_s3_acf_menus() {
   if( function_exists('acf_add_options_page') ):

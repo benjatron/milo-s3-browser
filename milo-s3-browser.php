@@ -9,7 +9,15 @@ License URI:  https://www.gnu.org/licenses/gpl-3.0.html
 Text Domain:  milo
 */
 
-// Load AWS SDK files
+/**
+ * This plugin accomplishes the following:
+ * 1. Creates a "Support Portal" for access to guides and support material
+ * 2. Automates the security and access to that portal with a hands-off approach
+ * 3. Displays files hosted on Amazon S3 and provides an interface for
+ *    downloading them through the website
+*/
+
+// Load vendor files
 require 'vendor/autoload.php';
 
 function milo_register_scripts() {
