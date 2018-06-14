@@ -1,3 +1,5 @@
+@import 'vendor/dialog-polyfill';
+
 @import 'partials/variables';
 @import 'partials/helpers';
 
@@ -9,6 +11,7 @@
 @import 'partials/atoms/a-contactSupport';
 @import 'partials/atoms/a-explorerDownload';
 @import 'partials/atoms/a-fileFolder';
+@import 'partials/atoms/a-loginModal';
 @import 'partials/atoms/a-supportGuides';
 
 // Molecules

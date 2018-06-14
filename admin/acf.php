@@ -723,25 +723,6 @@ if( function_exists('acf_add_local_field_group') ):
         'allow_archives' => 0,
         'multiple' => 0,
       ),
-      array(
-        'key' => 'field_5b1e87dd4b971',
-        'label' => 'Footer Disclosures',
-        'name' => 'milos3_login_disclosures',
-        'type' => 'wysiwyg',
-        'instructions' => 'Any other information that should be disclosed to the user before logging in.',
-        'required' => 0,
-        'conditional_logic' => 0,
-        'wrapper' => array(
-          'width' => '',
-          'class' => '',
-          'id' => '',
-        ),
-        'default_value' => 'Password not working? <a class="" href="">Click here.</a>',
-        'tabs' => 'all',
-        'toolbar' => 'full',
-        'media_upload' => 1,
-        'delay' => 0,
-      ),
     ),
     'location' => array(
       array(

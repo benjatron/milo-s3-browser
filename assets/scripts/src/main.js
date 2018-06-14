@@ -1,8 +1,24 @@
+// @codekit-prepend "../../../../milo-s3-browser/node_modules/dialog-polyfill/dialog-polyfill.js";
+
 // Scripts for the MILO S3 browser
 jQuery(document).ready(function() {
+  // Process dialog elements
+  const dialog = document.querySelectorAll('dialog');
+  dialog.forEach(function(element) {
+    dialogPolyfill.registerDialog(element);
+  });
+
   // Applies preload changes
   jQuery('.m-fileList.--preload').addClass('--is-collapsed').slideToggle(0).removeClass('--preload');
   jQuery('.a-browserDescription__body').slideToggle(0).removeClass('--preload');
+
+  // Login modal toggles
+  jQuery('.o-browserLogin__link').click(function() {
+    document.getElementById('milo-login-modal').showModal();
+  });
+  jQuery('.a-loginModal__close').click(function() {
+    document.getElementById('milo-login-modal').close();
+  });
 
   // Controls the opening and closing of the folder icon
   jQuery('.a-fileFolder').click(function() {

@@ -93,5 +93,6 @@ $divisionName = $division[0]->name;
       ?>
     </div>
   </div>
+  <?php require( plugin_dir_path(__FILE__) . 'parts/login-modal.php'); ?>
 </body>
 </html>
