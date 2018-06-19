@@ -127,18 +127,6 @@ endif;
  * Public Functionality
  */
 
-// Registers the styles and scripts used in public templates
-function milo_register_scripts() {
-  wp_enqueue_script( 's3-browser', plugins_url( 'assets/scripts/dist/main.min.js', __FILE__), array('sage/js') );
-
-  wp_register_style('s3-browser', plugins_url( 'assets/styles/dist/main.css', __FILE__), array('sage/css') );
-  wp_enqueue_style('s3-browser');
-}
-add_action( 'wp_enqueue_scripts', 'milo_register_scripts');
-
-// Updates the login form for plugin pages
-require 'app/forms/login-form.php';
-
 // Routes posts to the proper templates
 function milo_downloads_template($single) {
   global $wp_query, $post;
@@ -164,3 +152,15 @@ function milo_downloads_template($single) {
   return $single;
 }
 add_filter('template_include', 'milo_downloads_template', 110);
+
+// Registers the styles and scripts used in public templates
+function milo_register_scripts() {
+  wp_enqueue_script( 's3-browser', plugins_url( 'assets/scripts/dist/main.min.js', __FILE__), array('sage/js') );
+
+  wp_register_style('s3-browser', plugins_url( 'assets/styles/dist/main.css', __FILE__), array('sage/css') );
+  wp_enqueue_style('s3-browser');
+}
+add_action( 'wp_enqueue_scripts', 'milo_register_scripts');
+
+// Updates the login form for plugin pages
+require 'app/forms/login-form.php';
