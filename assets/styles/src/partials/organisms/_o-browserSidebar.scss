@@ -10,5 +10,9 @@
 
   .o-browserSidebar__section {
     padding: 2rem 2rem 0;
+
+    &.--hidden {
+      display: none;
+    }
   }
 }

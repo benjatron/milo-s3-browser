@@ -12,6 +12,11 @@ jQuery(document).ready(function() {
   jQuery('.m-fileList.--preload').addClass('--is-collapsed').slideToggle(0).removeClass('--preload');
   jQuery('.a-browserDescription__body').slideToggle(0).removeClass('--preload');
 
+  // If the user is on IE, show the IE guide download
+  if( navigator.userAgent.includes('MSIE') ){
+    jQuery('#milo-sidebar-ie').removeClass('--hidden');
+  }
+
   // Login modal toggles
   jQuery('.o-browserLogin__link').click(function() {
     document.getElementById('milo-login-modal').showModal();

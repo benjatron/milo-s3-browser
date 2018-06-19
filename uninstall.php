@@ -4,6 +4,7 @@ if( !defined('WP_UNINSTALL_PLUGIN') ):
   die;
 endif;
 
+global $milo_adminSettings;
 foreach( $milo_adminSettings as $setting ):
   delete_option($setting);
   // Removes the option for multisite as well

@@ -8,7 +8,9 @@ if( function_exists('get_field') ):
 endif;
 ?>
 <section class="o-browserSidebar">
-  <div class="o-browserSidebar__section">
+
+  <?php // This section only appears on IE via user agent detection ?>
+  <div id="milo-sidebar-ie" class="o-browserSidebar__section --hidden">
     <div class="a-explorerDownload">
       <h3 class="a-explorerDownload__headline">
         Using Internet Explorer?
@@ -21,6 +23,7 @@ endif;
       </a>
     </div>
   </div>
+
   <div class="o-browserSidebar__section">
     <div class="a-supportGuides">
       <h3 class="a-supportGuides__headline">

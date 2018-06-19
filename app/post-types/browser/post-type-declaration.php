@@ -1,9 +1,8 @@
 <?php
-if ( ! function_exists('milos3_browser_buckets') ) {
+if ( ! function_exists('milo_browser_post_type') ):
 
-  // Register Custom Post Type
-  function milos3_browser_buckets() {
-
+  // Registers browser post type
+  function milo_browser_post_type() {
     $labels = array(
       'name'                  => _x( 'AWS S3 Buckets', 'Post Type General Name', 'milo' ),
       'singular_name'         => _x( 'AWS S3 Bucket', 'Post Type Singular Name', 'milo' ),
@@ -70,9 +69,9 @@ if ( ! function_exists('milos3_browser_buckets') ) {
       'capabilities'          => $capabilities,
       'show_in_rest'          => true,
     );
-    register_post_type( 'milos3_bucket', $args );
+    register_post_type( 'milo_browser', $args );
 
   }
-  add_action( 'init', 'milos3_browser_buckets', 0 );
+  add_action( 'init', 'milo_browser_post_type', 0 );
 
-  }
+endif;

@@ -24,7 +24,7 @@ $divisionName = $division[0]->name;
 <!doctype html>
 <html <?php language_attributes(); ?> >
 <?php get_template_part('templates/head'); ?>
-<body <?php body_class($divisionClass); ?>>
+<body <?php body_class(array($divisionClass,'milo-browser')); ?>>
   <div id="page-wrapper">
     <?php
     do_action('get_header');
@@ -68,14 +68,13 @@ $divisionName = $division[0]->name;
         <?php
         // If the user is an admin or has entered the password, no need to show the password form
         if(
-          !is_user_logged_in ||
-          !current_user_can('administrator') ||
+          ! current_user_can('administrator') ||
           post_password_required()
         ):
-          require( plugin_dir_path(__FILE__) . 'parts/login.php');
+          require( plugin_dir_path(__FILE__) . 'partials/login.php');
         else:
-          require( plugin_dir_path(__FILE__) . 'parts/dashboard.php');
-          require( plugin_dir_path(__FILE__) . 'parts/sidebar.php');
+          require( plugin_dir_path(__FILE__) . 'partials/dashboard.php');
+          require( plugin_dir_path(__FILE__) . 'partials/sidebar.php');
         endif;
         ?>
       </div>
@@ -93,6 +92,6 @@ $divisionName = $division[0]->name;
       ?>
     </div>
   </div>
-  <?php require( plugin_dir_path(__FILE__) . 'parts/login-modal.php'); ?>
+  <?php require( plugin_dir_path(__FILE__) . 'partials/login-modal.php'); ?>
 </body>
 </html>

@@ -1,10 +1,16 @@
 <?php
-// Displays the settings page
-function milo_s3_browse_display_settings() {
+// Displays admin menu page
+function milo_browser_display_settings() {
+  global $milo_adminSettings;
+  global $milo_pluginSlug;
   ?>
   <form method="post" action="options.php">
-    <?php settings_fields( 'milo-s3-browser-plugin' ); ?>
-    <?php do_settings_sections( 'milo-s3-browser-plugin' ); ?>
+
+    <?php
+    // Outputs nonce, action and option_page fields
+    settings_fields( $milo_pluginSlug );
+    do_settings_sections( $milo_pluginSlug );
+    ?>
 
     <style>
       .separator{
@@ -60,7 +66,7 @@ function milo_s3_browse_display_settings() {
             </p>
           </td>
         </tr>
-        <tr valign="top" class="separator">
+        <tr>
           <th scope="row">
             AWS Region
           </th>
@@ -73,9 +79,6 @@ function milo_s3_browse_display_settings() {
             </p>
           </td>
         </tr>
-      </table>
-
-      <table class="form-table">
         <tr>
           <td colspan="3">
             <h2>
@@ -88,14 +91,19 @@ function milo_s3_browse_display_settings() {
             Auto-Generated Password
           </th>
           <td>
+
             <code>
               <?php
-                if( get_option('milo_generated_key') === false) :
-                  milo_cron_passgen();
+                if(
+                  ! get_option( 'milo_generated_key' ) ||
+                  strlen( get_option( 'milo_generated_key' ) ) < 1
+                ):
+                  milo_password_generator();
                 endif;
-                echo get_option('milo_generated_key');
+                echo esc_attr( get_option('milo_generated_key') );
               ?>
             </code>
+            <input type="hidden" name="milo_generated_key" value="<?php echo esc_attr( get_option( 'milo_generated_key' ) ); ?>" />
           </td>
           <td>
             <p>

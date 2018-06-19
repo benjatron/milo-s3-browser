@@ -23,32 +23,60 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
-	"\/admin\/acf.php": {
+	"\/app\/forms\/login-form.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/admin\/acf.php",
+		"oAP": "\/app\/forms\/login-form.php",
 		"oF": 0
 		},
-	"\/admin\/custom-post-types.php": {
+	"\/app\/helpers\/byte-format.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/admin\/custom-post-types.php",
+		"oAP": "\/app\/helpers\/byte-format.php",
 		"oF": 0
 		},
-	"\/admin\/functions.php": {
+	"\/app\/helpers\/download-time.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/admin\/functions.php",
+		"oAP": "\/app\/helpers\/download-time.php",
 		"oF": 0
 		},
-	"\/admin\/settings-page.php": {
+	"\/app\/helpers\/get-svg.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/admin\/settings-page.php",
+		"oAP": "\/app\/helpers\/get-svg.php",
+		"oF": 0
+		},
+	"\/app\/helpers\/password-generator.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/helpers\/password-generator.php",
+		"oF": 0
+		},
+	"\/app\/post-types\/browser\/directory-listing.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/post-types\/browser\/directory-listing.php",
+		"oF": 0
+		},
+	"\/app\/post-types\/browser\/post-type-declaration.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/post-types\/browser\/post-type-declaration.php",
+		"oF": 0
+		},
+	"\/app\/post-types\/browser\/shortcode.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/post-types\/browser\/shortcode.php",
 		"oF": 0
 		},
 	"\/assets\/images\/dist\/close.svg": {
@@ -326,6 +354,19 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "\/assets\/styles\/dist\/main.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/styles\/src\/partials\/_globals.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/src\/dist\/_globals.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -651,76 +692,6 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"\/public\/browser.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/public\/browser.php",
-		"oF": 0
-		},
-	"\/public\/functions.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/public\/functions.php",
-		"oF": 0
-		},
-	"\/public\/shortcode.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/public\/shortcode.php",
-		"oF": 0
-		},
-	"\/public\/templates\/archive-downloads.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/public\/templates\/archive-downloads.php",
-		"oF": 0
-		},
-	"\/public\/templates\/parts\/dashboard.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/public\/templates\/parts\/dashboard.php",
-		"oF": 0
-		},
-	"\/public\/templates\/parts\/directory.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/public\/templates\/parts\/directory.php",
-		"oF": 0
-		},
-	"\/public\/templates\/parts\/login-modal.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/public\/templates\/parts\/login-modal.php",
-		"oF": 0
-		},
-	"\/public\/templates\/parts\/login.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/public\/templates\/parts\/login.php",
-		"oF": 0
-		},
-	"\/public\/templates\/parts\/sidebar.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/public\/templates\/parts\/sidebar.php",
-		"oF": 0
-		},
-	"\/public\/templates\/single-downloads.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/public\/templates\/single-downloads.php",
-		"oF": 0
-		},
 	"\/README.md": {
 		"cB": 0,
 		"cS": 0,
@@ -750,6 +721,83 @@
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "\/build\/vendor",
+		"oF": 0
+		},
+	"\/views\/admin\/browser-dashboard.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/views\/admin\/browser-dashboard.php",
+		"oF": 0
+		},
+	"\/views\/admin\/browser-post.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/views\/admin\/browser-post.php",
+		"oF": 0
+		},
+	"\/views\/admin\/browser-security.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/views\/admin\/browser-security.php",
+		"oF": 0
+		},
+	"\/views\/public\/archive-browser.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/views\/public\/archive-browser.php",
+		"oF": 0
+		},
+	"\/views\/public\/browser.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/views\/public\/browser.php",
+		"oF": 0
+		},
+	"\/views\/public\/partials\/dashboard.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/views\/public\/partials\/dashboard.php",
+		"oF": 0
+		},
+	"\/views\/public\/partials\/directory.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/views\/public\/partials\/directory.php",
+		"oF": 0
+		},
+	"\/views\/public\/partials\/login-modal.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/views\/public\/partials\/login-modal.php",
+		"oF": 0
+		},
+	"\/views\/public\/partials\/login.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/views\/public\/partials\/login.php",
+		"oF": 0
+		},
+	"\/views\/public\/partials\/sidebar.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/views\/public\/partials\/sidebar.php",
+		"oF": 0
+		},
+	"\/views\/public\/single-browser.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/views\/public\/single-browser.php",
 		"oF": 0
 		}
 	},

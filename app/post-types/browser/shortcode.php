@@ -5,7 +5,7 @@ use Aws\Credentials\Credentials;
 use Aws\S3\Exception\S3Exception;
 
 // Shortcode to display S3 bucket
-function milo_s3_browser_shortcode_display($atts) {
+function milo_browser_shortcode($atts) {
 
   //Creates S3 client
   $credentials = new Aws\Credentials\Credentials(
@@ -26,6 +26,6 @@ function milo_s3_browser_shortcode_display($atts) {
   endif;
 
   // Displays the bucket browser
-  require('browser.php');
+  require(plugins_url() . '/milo-s3-browser/views/public/browser.php');
 }
-add_shortcode('milos3browser', 'milo_s3_browser_shortcode_display');
+add_shortcode('milos3browser', 'milo_browser_shortcode');
