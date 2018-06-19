@@ -34,7 +34,7 @@ if ( ! function_exists('milo_browser_post_type') ):
     );
     $rewrite = array(
       'slug'                  => 'downloads',
-      'with_front'            => true,
+      'with_front'            => false,
       'pages'                 => false,
       'feeds'                 => false,
     );
