@@ -8,7 +8,7 @@ if( function_exists('acf_add_local_field_group') ):
       array(
         'key' => 'field_5b19b520d154c',
         'label' => 'S3 Bucket Name',
-        'name' => 'milos3_bucket_name',
+        'name' => 'milo_bucket_name',
         'type' => 'text',
         'instructions' => 'The name of the bucket to include on this page',
         'required' => 0,
@@ -27,7 +27,7 @@ if( function_exists('acf_add_local_field_group') ):
       array(
         'key' => 'field_5b19b6b5d154e',
         'label' => 'Preview Image',
-        'name' => 'milos3_bucket_preview',
+        'name' => 'milo_bucket_preview',
         'type' => 'image',
         'instructions' => 'The background image to use for previews or links to this bucket',
         'required' => 0,
@@ -51,7 +51,7 @@ if( function_exists('acf_add_local_field_group') ):
       array(
         'key' => 'field_5b19b7431f1a5',
         'label' => 'Disclaimer Block',
-        'name' => 'milos3_bucket_disclaimer',
+        'name' => 'milo_bucket_disclaimer',
         'type' => 'wysiwyg',
         'instructions' => 'Disclaimer text to appear below the browser',
         'required' => 0,
