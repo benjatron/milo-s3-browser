@@ -88,3 +88,58 @@ if( function_exists('acf_add_local_field_group') ):
   ));
 
 endif;
+
+/**
+ *  Sets the parent page for the post type
+ */
+
+// Adds the meta box to browser posts
+function milo_browser_post_init() {
+  add_meta_box(
+    'milo_browser_parent_id',
+    'Parent Page',
+    'milo_set_browser_parent_id',
+    'milo_browser',
+    'side',
+    'low'
+  );
+}
+add_action( 'admin_init', 'milo_browser_post_init' );
+
+// Adds content to the meta box
+function milo_set_browser_parent_id() {
+  global $post;
+  $parent = get_field('milo_welcome_page', 'milo_browser');
+  ?>
+  <p>
+    All posts created for this plugin will have the following parent page:<br/>
+    <ul>
+      <li><strong>Title:</strong> <?php echo $parent->post_title; ?></li>
+      <li><strong>ID:</strong> <?php echo $parent->ID; ?></li>
+      <li><strong>Link:</strong> <a href="<?php echo get_edit_post_link($parent->ID); ?>" target="_blank"><?php echo get_edit_post_link($parent->ID); ?></a></li>
+    </ul>
+  </p>
+  <input type="hidden" id="parent_id" name="parent_id" value="<?php echo $parent->ID; ?>" />
+  <input type="hidden" name="parent_id_noncename" value="<?php echo wp_create_nonce(__FILE__); ?>" />
+  <?php
+}
+
+// Saves the meta data
+function milo_save_browser_parent_id() {
+  global $post;
+
+  // Make sure data came from the meta box
+  if( !wp_verify_nonce( $_POST['parent_id_noncename'], __FILE__ ) ):
+    return $post_id;
+  endif;
+
+  // If 'parent_id' is set and the post type is correct, save the data
+  if(
+    isset( $_POST['parent_id'] ) &&
+    ( $_POST['post_type'] == 'milo_browser' )
+  ):
+    $data = $_POST['parent_id'];
+    update_post_meta( $post_id, 'parent_id', $data );
+  endif;
+}
+add_action( 'save_post', 'milo_save_browser_parent_id' );
