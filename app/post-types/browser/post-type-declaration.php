@@ -32,8 +32,13 @@ if ( ! function_exists('milo_browser_post_type') ):
       'items_list_navigation' => __( 'Buckets list navigation', 'milo' ),
       'filter_items_list'     => __( 'Filter buckets list', 'milo' ),
     );
+    if( function_exists( 'get_field') ):
+      $slug = get_field('milo_welcome_page', 'milo_browser')->post_name;
+    else:
+      $slug = 'downloads';
+    endif;
     $rewrite = array(
-      'slug'                  => 'downloads',
+      'slug'                  => $slug,
       'with_front'            => false,
       'pages'                 => false,
       'feeds'                 => false,
@@ -53,7 +58,7 @@ if ( ! function_exists('milo_browser_post_type') ):
       'labels'                => $labels,
       'supports'              => array( 'title' ),
       'taxonomies'            => array('division'),
-      'hierarchical'          => false,
+      'hierarchical'          => true,
       'public'                => true,
       'show_ui'               => true,
       'show_in_menu'          => true,
@@ -62,7 +67,7 @@ if ( ! function_exists('milo_browser_post_type') ):
       'show_in_admin_bar'     => true,
       'show_in_nav_menus'     => false,
       'can_export'            => true,
-      'has_archive'           => true,
+      'has_archive'           => false,
       'exclude_from_search'   => false,
       'publicly_queryable'    => true,
       'rewrite'               => $rewrite,
