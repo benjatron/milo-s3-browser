@@ -1,7 +1,7 @@
 <?php
 if( function_exists('get_field') ):
-  $email = get_field('milos3_sidebar_email', 'milo_s3_browser');
-  $phone = get_field('milos3_sidebar_phone', 'milo_s3_browser');
+  $email = get_field('milo_sidebar_email', 'milo_browser');
+  $phone = get_field('milo_sidebar_phone', 'milo_browser');
 endif;
 ?>
 <dialog id="milo-login-modal" class="a-loginModal">

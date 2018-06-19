@@ -2,9 +2,9 @@
 // Displays the login form for protected content
 
 if( function_exists('get_field') ):
-  $heading = get_field('milos3_login_heading', 'milo_s3_browser');
-  $subhead = get_field('milos3_login_subhead', 'milo_s3_browser');
-  $description = get_field('milos3_login_description', 'milo_s3_browser');
+  $heading = get_field('milo_login_heading', 'milo_browser');
+  $subhead = get_field('milo_login_subhead', 'milo_browser');
+  $description = get_field('milo_login_description', 'milo_browser');
 else:
   $heading = 'Lorem Ipsum';
   $subhead = 'Dolor sit amet';
