@@ -1,4 +1,5 @@
 <?php
+// Sets up ACF for the view
 if ( ! function_exists('milo_browser_post_type') ):
 
   // Registers browser post type
@@ -32,13 +33,8 @@ if ( ! function_exists('milo_browser_post_type') ):
       'items_list_navigation' => __( 'Buckets list navigation', 'milo' ),
       'filter_items_list'     => __( 'Filter buckets list', 'milo' ),
     );
-    if( function_exists( 'get_field') ):
-      $slug = get_field('milo_welcome_page', 'milo_browser')->post_name;
-    else:
-      $slug = 'downloads';
-    endif;
     $rewrite = array(
-      'slug'                  => $slug,
+      'slug'                  => '/',
       'with_front'            => false,
       'pages'                 => false,
       'feeds'                 => false,
@@ -80,3 +76,4 @@ if ( ! function_exists('milo_browser_post_type') ):
   add_action( 'init', 'milo_browser_post_type', 0 );
 
 endif;
+
