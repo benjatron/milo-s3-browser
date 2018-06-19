@@ -751,11 +751,11 @@
 		"oAP": "\/views\/public\/archive-browser.php",
 		"oF": 0
 		},
-	"\/views\/public\/browser.php": {
+	"\/views\/public\/partials\/browser.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/views\/public\/browser.php",
+		"oAP": "\/views\/public\/partials\/browser.php",
 		"oF": 0
 		},
 	"\/views\/public\/partials\/dashboard.php": {

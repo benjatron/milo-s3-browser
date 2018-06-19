@@ -2,8 +2,8 @@
 // Displays a "welcome" area and dashboard for the browser interface
 
 if( function_exists('get_field') ):
-  $intro = get_field('milos3_welcome_intro', 'milo_s3_browser');
-  $lower = get_field('milos3_welcome_lower', 'milo_s3_browser');
+  $intro = get_field('milo_welcome_intro', 'milo_browser');
+  $lower = get_field('milo_welcome_lower', 'milo_browser');
 endif;
 ?>
 <section class="o-browserDashboard">
@@ -12,11 +12,11 @@ endif;
   </div>
   <div class="o-browserDashboard__grid">
     <?php
-    while( have_rows('milos3_welcome_grid', 'milo_s3_browser') ): the_row();
+    while( have_rows('milo_welcome_grid', 'milo_browser') ): the_row();
       if( get_row_layout() == 'full-width' ):
         $browser = get_sub_field('browser');
           $browserLink = get_permalink($browser->ID);
-          $browserImage = get_field('milos3_bucket_preview', $browser->ID);
+          $browserImage = get_field('milo_bucket_preview', $browser->ID);
         $button = get_sub_field('button');
         ?>
         <div class="m-gridCell m-gridCell--full" style="background-image: url('<?php echo $browserImage['url']; ?>');">
@@ -45,10 +45,10 @@ endif;
       elseif( get_row_layout() == 'two-up'):
         $browser_01 = get_sub_field('browser_01');
           $browserLink_01 = get_permalink($browser_01->ID);
-          $browserImage_01 = get_field('milos3_bucket_preview', $browser_01->ID);
+          $browserImage_01 = get_field('milo_bucket_preview', $browser_01->ID);
         $browser_02 = get_sub_field('browser_02');
           $browserLink_02 = get_permalink($browser_02->ID);
-          $browserImage_02 = get_field('milos3_bucket_preview', $browser_02->ID);
+          $browserImage_02 = get_field('milo_bucket_preview', $browser_02->ID);
         $button_01 = get_sub_field('button_01');
         $button_02 = get_sub_field('button_02');
         ?>

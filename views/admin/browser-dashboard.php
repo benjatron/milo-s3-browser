@@ -175,7 +175,7 @@ if( function_exists('acf_add_local_field_group') ):
                   'id' => '',
                 ),
                 'post_type' => array(
-                  0 => 'milos3_bucket',
+                  0 => 'milo_browser',
                 ),
                 'taxonomy' => array(
                 ),
@@ -381,7 +381,7 @@ if( function_exists('acf_add_local_field_group') ):
                   'id' => '',
                 ),
                 'post_type' => array(
-                  0 => 'milos3_bucket',
+                  0 => 'milo_browser',
                 ),
                 'taxonomy' => array(
                 ),
@@ -404,7 +404,7 @@ if( function_exists('acf_add_local_field_group') ):
                   'id' => '',
                 ),
                 'post_type' => array(
-                  0 => 'milos3_bucket',
+                  0 => 'milo_browser',
                 ),
                 'taxonomy' => array(
                 ),
