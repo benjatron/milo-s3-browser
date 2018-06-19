@@ -25,7 +25,7 @@ if( function_exists('acf_add_local_field_group') ):
       array(
         'key' => 'field_5b198c7960ab7',
         'label' => 'Welcome Page',
-        'name' => 'milos3_welcome_page',
+        'name' => 'milo_welcome_page',
         'type' => 'post_object',
         'instructions' => 'Please pick a page to act as the welcome page for this plugin. Your settings here will override some of the content on that page.',
         'required' => 0,
@@ -48,7 +48,7 @@ if( function_exists('acf_add_local_field_group') ):
       array(
         'key' => 'field_5b19a67f977cc',
         'label' => 'Introductory Content',
-        'name' => 'milos3_welcome_intro',
+        'name' => 'milo_welcome_intro',
         'type' => 'wysiwyg',
         'instructions' => 'This content block appears above the blocks for each file bucket.',
         'required' => 0,
@@ -67,7 +67,7 @@ if( function_exists('acf_add_local_field_group') ):
       array(
         'key' => 'field_5b19ae3a31be6',
         'label' => 'Browser Link Grid',
-        'name' => 'milos3_welcome_grid',
+        'name' => 'milo_welcome_grid',
         'type' => 'flexible_content',
         'instructions' => 'The grid of browsers to link to',
         'required' => 0,
@@ -463,7 +463,7 @@ if( function_exists('acf_add_local_field_group') ):
       array(
         'key' => 'field_5b19b24cdd25a',
         'label' => 'Lower Content',
-        'name' => 'milos3_welcome_lower',
+        'name' => 'milo_welcome_lower',
         'type' => 'wysiwyg',
         'instructions' => 'This content block appears below the blocks for each file bucket.',
         'required' => 0,
@@ -498,7 +498,7 @@ if( function_exists('acf_add_local_field_group') ):
       array(
         'key' => 'field_5b19b2ec8e620',
         'label' => 'Internet Explorer Instructions',
-        'name' => 'milos3_sidebar_explorer',
+        'name' => 'milo_sidebar_explorer',
         'type' => 'file',
         'instructions' => 'Instructions for downloading in Internet Explorer',
         'required' => 0,
@@ -517,7 +517,7 @@ if( function_exists('acf_add_local_field_group') ):
       array(
         'key' => 'field_5b19b3648e621',
         'label' => 'Support Guides',
-        'name' => 'milos3_sidebar_guides',
+        'name' => 'milo_sidebar_guides',
         'type' => 'repeater',
         'instructions' => 'Additional manuals available for download',
         'required' => 0,
@@ -576,7 +576,7 @@ if( function_exists('acf_add_local_field_group') ):
       array(
         'key' => 'field_5b19b433eae98',
         'label' => 'Contact Email',
-        'name' => 'milos3_sidebar_email',
+        'name' => 'milo_sidebar_email',
         'type' => 'email',
         'instructions' => 'The email address to use for email communication',
         'required' => 0,
@@ -594,7 +594,7 @@ if( function_exists('acf_add_local_field_group') ):
       array(
         'key' => 'field_5b19b462eae99',
         'label' => 'Contact Phone Number',
-        'name' => 'milos3_sidebar_phone',
+        'name' => 'milo_sidebar_phone',
         'type' => 'text',
         'instructions' => 'The number to use for telephonic communication',
         'required' => 0,
@@ -629,7 +629,7 @@ if( function_exists('acf_add_local_field_group') ):
       array(
         'key' => 'field_5b1e85c14b96c',
         'label' => 'Login Heading',
-        'name' => 'milos3_login_heading',
+        'name' => 'milo_login_heading',
         'type' => 'text',
         'instructions' => 'The text at the top of the login form',
         'required' => 0,
@@ -648,7 +648,7 @@ if( function_exists('acf_add_local_field_group') ):
       array(
         'key' => 'field_5b1e866b4b96d',
         'label' => 'Login Subhead',
-        'name' => 'milos3_login_subhead',
+        'name' => 'milo_login_subhead',
         'type' => 'text',
         'instructions' => 'Text to appear below the heading',
         'required' => 0,
@@ -667,7 +667,7 @@ if( function_exists('acf_add_local_field_group') ):
       array(
         'key' => 'field_5b1e86914b96e',
         'label' => 'Login Description',
-        'name' => 'milos3_login_description',
+        'name' => 'milo_login_description',
         'type' => 'wysiwyg',
         'instructions' => 'Description block to explain the purpose and contents of the login-protected area.',
         'required' => 0,
@@ -686,7 +686,7 @@ if( function_exists('acf_add_local_field_group') ):
       array(
         'key' => 'field_5b1e86ce4b96f',
         'label' => 'Terms of Service Label',
-        'name' => 'milos3_login_tosLabel',
+        'name' => 'milo_login_tosLabel',
         'type' => 'text',
         'instructions' => 'How the terms of service or relevant privacy policy should be credited',
         'required' => 0,
@@ -705,7 +705,7 @@ if( function_exists('acf_add_local_field_group') ):
       array(
         'key' => 'field_5b1e870f4b970',
         'label' => 'Terms of Service Link',
-        'name' => 'milos3_login_tosLink',
+        'name' => 'milo_login_tosLink',
         'type' => 'page_link',
         'instructions' => 'The page to link to for the terms of service or privacy policy',
         'required' => 0,
