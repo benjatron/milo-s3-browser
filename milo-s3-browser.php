@@ -141,12 +141,36 @@ function milo_show_password_meta() {
 }
 add_action( 'add_meta_boxes', 'milo_show_password_meta' );
 
+// When saving a browser page, update its post password
+function milo_set_password() {
+  if( in_array( get_the_ID(), milo_browser_pages() ) ):
+    // Unhooking to avoid infinite loop
+    remove_action( 'save_post', 'milo_set_password' );
+
+    $browserPages = milo_browser_pages();
+    foreach( $browserPages as $page ):
+      wp_update_post( array(
+        'ID' => $page,
+        'post_password' => get_option('milo_generated_key')
+      ) );
+    endforeach;
+
+    // Rehooking function for next save
+    add_action( 'save_post', 'milo_set_password' );
+  endif;
+}
+add_action( 'save_post', 'milo_set_password' );
+
 
 
 
 /**
  * Public Functionality
  */
+
+// Registers the shortcode and directory listing function
+require 'app/post-types/browser/directory-listing.php';
+require 'app/post-types/browser/shortcode.php';
 
 // Registers the styles and scripts used in public templates
 function milo_register_scripts() {
