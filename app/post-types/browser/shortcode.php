@@ -26,6 +26,6 @@ function milo_browser_shortcode($atts) {
   endif;
 
   // Displays the bucket browser
-  require(plugins_url() . '/milo-s3-browser/views/public/browser.php');
+  include( locate_template( 'templates/70-plugins/701-browser.php', false, false ) );
 }
 add_shortcode('milos3browser', 'milo_browser_shortcode');
