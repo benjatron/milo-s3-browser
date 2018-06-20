@@ -92,7 +92,7 @@ endif;
 /**
  *  Sets the parent page for the post type
  */
-
+if( 1 != 1):
 // Adds the meta box to browser posts
 function milo_browser_post_init() {
   add_meta_box(
@@ -143,3 +143,4 @@ function milo_save_browser_parent_id() {
   endif;
 }
 add_action( 'save_post', 'milo_save_browser_parent_id' );
+endif;

@@ -4,13 +4,13 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit73e14ac2d81c69f63ece4f66d3ec7035
+class ComposerStaticInit20e506f21aa33b90b7c59f6190485ff2
 {
     public static $files = array (
-        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'b067bc7112e384b61c701452d53a14a8' => __DIR__ . '/..' . '/mtdowling/jmespath.php/src/JmesPath.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '8a9dc1de0ca7e01f3e08231539562f61' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/functions.php',
     );
 
@@ -18,6 +18,7 @@ class ComposerStaticInit73e14ac2d81c69f63ece4f66d3ec7035
         'P' => 
         array (
             'Psr\\Http\\Message\\' => 17,
+            'PhpConsole\\' => 11,
         ),
         'J' => 
         array (
@@ -39,6 +40,10 @@ class ComposerStaticInit73e14ac2d81c69f63ece4f66d3ec7035
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'PhpConsole\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-console/php-console/src/PhpConsole',
         ),
         'JmesPath\\' => 
         array (
@@ -65,8 +70,8 @@ class ComposerStaticInit73e14ac2d81c69f63ece4f66d3ec7035
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit73e14ac2d81c69f63ece4f66d3ec7035::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit73e14ac2d81c69f63ece4f66d3ec7035::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit20e506f21aa33b90b7c59f6190485ff2::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit20e506f21aa33b90b7c59f6190485ff2::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
