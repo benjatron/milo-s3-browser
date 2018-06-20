@@ -65,13 +65,6 @@
 		"oAP": "\/app\/post-types\/browser\/directory-listing.php",
 		"oF": 0
 		},
-	"\/app\/post-types\/browser\/post-type-declaration.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/app\/post-types\/browser\/post-type-declaration.php",
-		"oF": 0
-		},
 	"\/app\/post-types\/browser\/shortcode.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -723,81 +716,11 @@
 		"oAP": "\/build\/vendor",
 		"oF": 0
 		},
-	"\/views\/admin\/browser-dashboard.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/views\/admin\/browser-dashboard.php",
-		"oF": 0
-		},
-	"\/views\/admin\/browser-post.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/views\/admin\/browser-post.php",
-		"oF": 0
-		},
 	"\/views\/admin\/browser-security.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/views\/admin\/browser-security.php",
-		"oF": 0
-		},
-	"\/views\/public\/archive-browser.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/views\/public\/archive-browser.php",
-		"oF": 0
-		},
-	"\/views\/public\/partials\/browser.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/views\/public\/partials\/browser.php",
-		"oF": 0
-		},
-	"\/views\/public\/partials\/dashboard.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/views\/public\/partials\/dashboard.php",
-		"oF": 0
-		},
-	"\/views\/public\/partials\/directory.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/views\/public\/partials\/directory.php",
-		"oF": 0
-		},
-	"\/views\/public\/partials\/login-modal.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/views\/public\/partials\/login-modal.php",
-		"oF": 0
-		},
-	"\/views\/public\/partials\/login.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/views\/public\/partials\/login.php",
-		"oF": 0
-		},
-	"\/views\/public\/partials\/sidebar.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/views\/public\/partials\/sidebar.php",
-		"oF": 0
-		},
-	"\/views\/public\/single-browser.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/views\/public\/single-browser.php",
 		"oF": 0
 		}
 	},
