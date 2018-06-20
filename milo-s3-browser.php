@@ -63,44 +63,41 @@ function milo_register_settings() {
 }
 add_action( 'admin_init', 'milo_register_settings');
 
-// Registers the Browser post type
-require 'app/post-types/browser/post-type-declaration.php';
-
 // Creates menu items for the Browser post type
 function milo_menu_items() {
   global $milo_pluginSlug;
 
   // Creates a "Dashboard Settings" page
   if( function_exists('acf_add_options_page') ):
-    acf_add_options_page(array(
-      'page_title' => 'Browser Dashboard Settings',
-      'menu_title' => 'Dashboard Settings',
+    acf_add_options_sub_page(array(
+      'page_title' => 'Login Form Settings',
+      'menu_title' => 'Login Form Settings',
       'capability' => 'manage_options',
-      'parent_slug' => 'edit.php?post_type=milo_browser',
-      'post_id' => 'milo_browser'
+      'parent_slug' => $milo_pluginSlug
+    ));
+    acf_add_options_sub_page(array(
+      'page_title' => 'Sidebar Settings',
+      'menu_title' => 'Sidebar Settings',
+      'capability' => 'manage_options',
+      'parent_slug' => $milo_pluginSlug
     ));
   endif;
 
-  // Creates an "AWS & Security" page in the admin menu
-  add_submenu_page(
-    'edit.php?post_type=milo_browser',
-    'AWS & Security',
-    'AWS & Security',
+  // Creates a "S3 Browsers" page in the admin menu
+  add_menu_page(
+    'S3 Browsers',
+    'S3 Browsers',
     'manage_options',
     $milo_pluginSlug,
-    'milo_browser_display_settings'
+    'milo_browser_display_settings',
+    'dashicons-admin-generic',
+    51
   );
 }
 add_action('admin_menu', 'milo_menu_items');
 
-// Sets up view for the settings page for the browser post type
-require 'views/admin/browser-dashboard.php';
-
 // Sets up the view for the AWS & Security admin menu page
 require 'views/admin/browser-security.php';
-
-// Sets up the admin view for individual browser post pages
-require 'views/admin/browser-post.php';
 
 // Creates a new cron schedule - every month
 function milo_cron_monthly( $schedule ) {
