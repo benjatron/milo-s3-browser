@@ -63,7 +63,7 @@ if ( ! function_exists('milo_browser_post_type') ):
       'show_in_admin_bar'     => true,
       'show_in_nav_menus'     => false,
       'can_export'            => true,
-      'has_archive'           => false,
+      'has_archive'           => true,
       'exclude_from_search'   => false,
       'publicly_queryable'    => true,
       'rewrite'               => $rewrite,
