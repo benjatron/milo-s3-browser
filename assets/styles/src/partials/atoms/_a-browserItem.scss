@@ -6,7 +6,7 @@
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
-  height: 3.375rem;
+  height: 3.75rem;
   transition: background-color 700ms ease;
   width: calc(100% - 8rem);
 
@@ -20,8 +20,8 @@
 
   .a-browserItem__icon {
     margin: auto .5rem;
-    height: 2rem;
-    width: 2rem;
+    height: 3.2rem;
+    width: 3.2rem;
 
     svg {
       fill: $gray;

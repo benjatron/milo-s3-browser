@@ -7,16 +7,14 @@
 
   .a-fileFolder__icon {
     display: flex;
-    height: 2rem;
+    height: 3.2rem;
     margin: .5rem;
-    width: 2rem;
+    width: 3.2rem;
 
     &.a-fileFolder__icon--open {
-      fill: $blue;
-
-      svg {
-        fill: $blue;
-      }
+      height: 4.2rem;
+      margin: .2rem .15rem;
+      width: 3.9rem;
     }
 
     &.--is-hidden {
@@ -26,7 +24,7 @@
 
   .a-fileFolder__folder {
     font-weight: 400;
-    margin: 1rem 0 0 0;
+    margin: 1.5rem 0 0 0;
     padding: 0 0 0 .5rem;
   }
 }

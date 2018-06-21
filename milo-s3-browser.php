@@ -29,6 +29,8 @@ require 'app/helpers/byte-format.php';
 require 'app/helpers/download-time.php';
 // Imports the contents of an SVG file
 require 'app/helpers/get-svg.php';
+// Imports the contents of a PNG file
+require 'app/helpers/get-png.php';
 // Generates a cryptographically secure string
 require 'app/helpers/password-generator.php';
 
