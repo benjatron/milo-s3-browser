@@ -23,6 +23,13 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/app\/forms\/email-form.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/forms\/email-form.php",
+		"oF": 0
+		},
 	"\/app\/forms\/login-form.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -56,6 +63,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/app\/helpers\/download-time.php",
+		"oF": 0
+		},
+	"\/app\/helpers\/get-png.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/helpers\/get-png.php",
 		"oF": 0
 		},
 	"\/app\/helpers\/get-svg.php": {
@@ -207,6 +221,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/images\/src\/file-alt.png": {
+		"ft": 32768,
+		"iS": 2634,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/file-alt.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/images\/src\/file-alt.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -216,6 +241,17 @@
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/assets\/images\/src\/file-archive.png": {
+		"ft": 32768,
+		"iS": 4397,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/file-archive.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/assets\/images\/src\/file-archive.svg": {
 		"ft": 2097152,
@@ -227,6 +263,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/images\/src\/file-audio.png": {
+		"ft": 32768,
+		"iS": 19531,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/file-audio.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/images\/src\/file-audio.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -236,6 +283,17 @@
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/assets\/images\/src\/file-image.png": {
+		"ft": 32768,
+		"iS": 3432,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/file-image.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/assets\/images\/src\/file-image.svg": {
 		"ft": 2097152,
@@ -247,6 +305,28 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/images\/src\/file-milo.png": {
+		"ft": 32768,
+		"iS": 11958,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/file-milo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/src\/file-pdf.png": {
+		"ft": 32768,
+		"iS": 3400,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/file-pdf.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/images\/src\/file-pdf.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -256,6 +336,17 @@
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/assets\/images\/src\/file-video.png": {
+		"ft": 32768,
+		"iS": 22963,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/file-video.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/assets\/images\/src\/file-video.svg": {
 		"ft": 2097152,
@@ -267,6 +358,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/images\/src\/file.png": {
+		"ft": 32768,
+		"iS": 2179,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/file.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/images\/src\/file.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -277,6 +379,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/images\/src\/folder-open.png": {
+		"ft": 32768,
+		"iS": 3245,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/folder-open.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/images\/src\/folder-open.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -286,6 +399,17 @@
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/assets\/images\/src\/folder.png": {
+		"ft": 32768,
+		"iS": 3317,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/folder.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/assets\/images\/src\/folder.svg": {
 		"ft": 2097152,
@@ -304,7 +428,7 @@
 		"oAP": "\/assets\/images\/dist\/ie-logo.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
