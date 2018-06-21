@@ -10,12 +10,8 @@ function milo_directory($directory, &$objectArray) {
     ?>
       <li class="m-fileList__item m-fileList__item--hasChildren">
         <div class="a-fileFolder">
-          <svg class="a-fileFolder__icon" viewBox="0 0 16 16">
-            <?php get_svg('folder'); ?>
-          </svg>
-          <svg class="a-fileFolder__icon a-fileFolder__icon--open --is-hidden" viewBox="0 0 16 16">
-            <?php get_svg('folder-open'); ?>
-          </svg>
+          <img class="a-fileFolder__icon" src="<?php echo get_png('folder'); ?>" />
+          <img class="a-fileFolder__icon a-fileFolder__icon--open --is-hidden" src="<?php echo get_png('folder-open'); ?>" />
           <h3 class="a-fileFolder__folder">
             <?php echo $item; ?>
           </h3>
@@ -35,7 +31,7 @@ function milo_directory($directory, &$objectArray) {
 
       $fileTypes = array(
         'archive' => array(
-          '7z', 'arj', 'deb', 'gz', 'milo', 'pkg', 'rar', 'rpm', 'tar', 'z', 'zip'
+          '7z', 'arj', 'deb', 'gz', 'pkg', 'rar', 'rpm', 'tar', 'z', 'zip'
         ),
         'audio' => array(
           'aif', 'cda', 'mid', 'midi', 'mp3', 'mpa', 'ogg', 'wav', 'wma', 'wpl'
@@ -45,6 +41,9 @@ function milo_directory($directory, &$objectArray) {
         ),
         'image' => array(
           'ai', 'bmp', 'eps', 'gif', 'ico', 'jpg', 'jpeg', 'png', 'ps', 'psd', 'svg', 'tif', 'tiff'
+        ),
+        'milo' => array(
+          'milo'
         ),
         'pdf' => array(
           'pdf'
@@ -63,27 +62,28 @@ function milo_directory($directory, &$objectArray) {
       ?>
       <li id="miloFile-<?php echo $id; ?>" class="m-fileList__item">
         <div class="a-browserItem">
-          <svg class="a-browserItem__icon" viewBox="0 0 16 16">
           <?php
             // Retrieves the icon based on file extension
             $ext = end(explode('.', $name));
             if( in_array( $ext, $fileTypes['archive'] ) ):
-              get_svg('file-archive');
+              $file = 'file-archive';
             elseif( in_array( $ext, $fileTypes['audio'] ) ):
-              get_svg('file-audio');
+              $file = 'file-audio';
             elseif( in_array( $ext, $fileTypes['document'] ) ):
-              get_svg('file-alt');
+              $file = 'file-alt';
             elseif( in_array( $ext, $fileTypes['image'] ) ):
-              get_svg('file-image');
+              $file = 'file-image';
+            elseif( in_array( $ext, $fileTypes['milo'] ) ):
+              $file = 'file-milo';
             elseif( in_array( $ext, $fileTypes['pdf'] ) ):
-              get_svg('file-pdf');
+              $file = 'file-pdf';
             elseif( in_array( $ext, $fileTypes['video'] ) ):
-              get_svg('file-video');
+              $file = 'file-video';
             else:
-              get_svg('file');
+              $file = 'file';
             endif;
           ?>
-          </svg>
+          <img class="a-browserItem__icon" src="<?php echo get_png($file); ?>" />
           <h3 class="a-browserItem__text">
             <a class="a-browserItem__text--title" href="<?php echo $link; ?>" target="_blank" download>
               <?php echo $name; ?>
