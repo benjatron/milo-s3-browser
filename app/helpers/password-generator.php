@@ -12,4 +12,7 @@ function milo_password_generator() {
       'post_password' => $passphrase
     ) );
   endforeach;
+
+  // Email the password update to assigned emails
+  milo_email_password();
 }
