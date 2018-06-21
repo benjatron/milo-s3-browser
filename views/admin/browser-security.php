@@ -4,7 +4,7 @@ function milo_browser_display_settings() {
   global $milo_adminSettings;
   global $milo_pluginSlug;
   ?>
-  <form method="post" action="options.php">
+  <form id="plugin-settings" method="post" action="options.php">
 
     <?php
     // Outputs nonce, action and option_page fields
@@ -86,12 +86,11 @@ function milo_browser_display_settings() {
             </h2>
           </td>
         </tr>
-        <tr valign="top" class="separator">
+        <tr valign="top">
           <th scope="row">
             Auto-Generated Password
           </th>
           <td>
-
             <code>
               <?php
                 if(
@@ -108,6 +107,23 @@ function milo_browser_display_settings() {
           <td>
             <p>
               This password can also be used for accessing content and can be shared for short-term purposes. It is automatically regenerated every month.
+            </p>
+          </td>
+        </tr>
+        <tr class="separator">
+          <th scope="row">
+            Email Address(es)
+          </th>
+          <td>
+            <textarea name="email_addresses" form="plugin-settings"
+              autocapitalize="none" autocomplete="on"
+              cols="48" rows="3" style="resize:none;"
+              placeholder="email@website.com"
+              ><?php if( get_option( 'email_addresses' ) != ''):echo esc_attr( get_option('email_addresses') ); else: echo 'Comma-separated email addresses'; endif; ?></textarea>
+          </td>
+          <td>
+            <p>
+              Email addresses to update when the password regenerates. Multiple addresses should be separated by commas.
             </p>
           </td>
         </tr>

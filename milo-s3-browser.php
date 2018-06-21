@@ -42,7 +42,8 @@ $milo_adminSettings = array(
   'aws_key',
   'aws_secret',
   'aws_region',
-  'milo_generated_key'
+  'milo_generated_key',
+  'email_addresses'
 );
 
 // Registers the plugin settings in $milo_adminSettings
@@ -98,6 +99,9 @@ add_action('admin_menu', 'milo_menu_items');
 
 // Sets up the view for the AWS & Security admin menu page
 require 'views/admin/browser-security.php';
+
+// Loads the email form used for notifying of password updates
+require 'app/forms/email-form.php';
 
 // Creates a new cron schedule - every month
 function milo_cron_monthly( $schedule ) {
