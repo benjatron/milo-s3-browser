@@ -110,6 +110,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/images\/dist\/file-alt.png": {
+		"ft": 32768,
+		"iS": 2634,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/file-alt.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/images\/dist\/file-alt.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -119,6 +130,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/assets\/images\/dist\/file-archive.png": {
+		"ft": 32768,
+		"iS": 4397,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/file-archive.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/assets\/images\/dist\/file-archive.svg": {
 		"ft": 2097152,
@@ -130,6 +152,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/images\/dist\/file-audio.png": {
+		"ft": 32768,
+		"iS": 19531,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/file-audio.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/images\/dist\/file-audio.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -139,6 +172,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/assets\/images\/dist\/file-image.png": {
+		"ft": 32768,
+		"iS": 3432,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/file-image.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/assets\/images\/dist\/file-image.svg": {
 		"ft": 2097152,
@@ -150,6 +194,28 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/images\/dist\/file-milo.png": {
+		"ft": 32768,
+		"iS": 11958,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/file-milo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/images\/dist\/file-pdf.png": {
+		"ft": 32768,
+		"iS": 3400,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/file-pdf.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/images\/dist\/file-pdf.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -159,6 +225,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/assets\/images\/dist\/file-video.png": {
+		"ft": 32768,
+		"iS": 22963,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/file-video.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/assets\/images\/dist\/file-video.svg": {
 		"ft": 2097152,
@@ -170,6 +247,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/images\/dist\/file.png": {
+		"ft": 32768,
+		"iS": 2179,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/file.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/images\/dist\/file.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -180,6 +268,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/images\/dist\/folder-open.png": {
+		"ft": 32768,
+		"iS": 3245,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/folder-open.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/images\/dist\/folder-open.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -189,6 +288,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/assets\/images\/dist\/folder.png": {
+		"ft": 32768,
+		"iS": 3317,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/folder.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/assets\/images\/dist\/folder.svg": {
 		"ft": 2097152,
