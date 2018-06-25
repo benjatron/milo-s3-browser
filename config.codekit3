@@ -93,6 +93,20 @@
 		"oAP": "\/app\/post-types\/browser\/directory-listing.php",
 		"oF": 0
 		},
+	"\/app\/post-types\/browser\/download-modal.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/post-types\/browser\/download-modal.php",
+		"oF": 0
+		},
+	"\/app\/post-types\/browser\/modal-listing.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/post-types\/browser\/modal-listing.php",
+		"oF": 0
+		},
 	"\/app\/post-types\/browser\/shortcode.php": {
 		"cB": 0,
 		"ft": 8192,
