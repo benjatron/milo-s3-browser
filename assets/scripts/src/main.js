@@ -25,6 +25,24 @@ jQuery(document).ready(function() {
     document.getElementById('milo-login-modal').close();
   });
 
+  // If a download modal is in the url, open it
+  if( window.location.href.indexOf('#download-') > 0 ) {
+    let $id = window.location.href.split('#');
+    document.getElementById($id[1]).showModal();
+  }
+
+  // Download modal toggling
+  jQuery('.a-browserItem__text--title').click(function() {
+    let $id = "".concat( 'download-', jQuery(this).attr('href').split('-').slice(1,2) );
+    // console.log($id);
+    document.getElementById($id).showModal();
+  });
+  jQuery('.a-browserButton').click(function() {
+    let $id = "".concat( 'download-', jQuery(this).attr('href').split('-').slice(1,2) );
+    // console.log($id);
+    document.getElementById($id).showModal();
+  });
+
   // Controls the opening and closing of the folder icon
   jQuery('.a-fileFolder').click(function() {
     jQuery(this).find('.a-fileFolder__icon').toggleClass('--is-hidden');
