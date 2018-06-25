@@ -14,6 +14,9 @@ function milo_download_modal( $id, $name, $size, $file, $link, $description ) {
   $url = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
   ?>
   <dialog id="download-<?php echo $id; ?>" class="m-downloadDialog">
+    <div class="m-downloadDialog__close">
+      <?php get_svg('close'); ?>
+    </div>
     <img class="m-downloadDialog__icon" src="<?php echo get_png($file); ?>" />
     <div class="m-downloadDialog__masthead">
       <h3 class="m-downloadDialog__name">File Name: <?php echo $name; ?></h3>
@@ -44,7 +47,10 @@ function milo_download_modal( $id, $name, $size, $file, $link, $description ) {
     <?php
     endif;
     ?>
-    <p><?php echo $link; ?></p>
+    <a class="m-downloadDialog__button" href="<?php echo $link; ?>" target="_blank" download>
+      <div class="m-downloadDialog__link">Download</div>
+    </a>
+    <p class="m-downloadDialog__ieDisclosure --is-hidden">It looks like you're using Internet Explorer. Some download functionality may be different than expected in this browser, which is explained in <a class="m-downloadDialog__textLink" href="" target="_blank" download>this guide</a></p>
   </dialog>
   <?php
   return;
