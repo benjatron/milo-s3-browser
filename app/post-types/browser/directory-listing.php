@@ -85,14 +85,14 @@ function milo_directory($directory, &$objectArray) {
           ?>
           <img class="a-browserItem__icon" src="<?php echo get_png($file); ?>" />
           <h3 class="a-browserItem__text">
-            <a class="a-browserItem__text--title" href="<?php echo $link; ?>" target="_blank" download>
+            <a class="a-browserItem__text--title" href="#download-<?php echo $id; ?>">
               <?php echo $name; ?>
             </a>
             <br/>
             Size: <?php echo formatBytes($size); ?><span class="a-browserItem__text--spacer"></span>Time: <?php echo downloadTime($size); ?>
           </h3>
         </div>
-        <a class="a-browserButton" href="<?php echo $link; ?>" target="_blank" download>
+        <a class="a-browserButton" href="#download-<?php echo $id; ?>">
           <div class="a-browserButton__link">Download</div>
         </a>
 
@@ -113,7 +113,10 @@ function milo_directory($directory, &$objectArray) {
             Description
           </h4>
           <p class="a-browserDescription__body --preload">
-            <?php echo file_get_contents($objectArray[$id+1]['link']); ?>
+            <?php
+              $description = file_get_contents($objectArray[$id+1]['link']);
+              echo $description;
+            ?>
           </p>
         </div>
         <?php
