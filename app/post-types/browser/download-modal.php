@@ -28,21 +28,23 @@ function milo_download_modal( $id, $name, $size, $file, $link, $description ) {
     // If there is a description, display it
     if( $description != "" ):
     ?>
-      <div class="a-browserDescription">
-        <svg class="a-browserDescription__toggle" viewBox="0 0 16 16">
-          <path
-            d=" M 0,0
-                L 16,8
-                L 0,16
-              "
-          />
-        </svg>
-        <h4 class="a-browserDescription__title">
-          Description
-        </h4>
-        <p class="a-browserDescription__body --preload">
-          <?php echo $description; ?>
-        </p>
+      <div class="m-downloadDialog__description">
+        <div class="a-browserDescription">
+          <svg class="a-browserDescription__toggle" viewBox="0 0 16 16">
+            <path
+              d=" M 0,0
+                  L 16,8
+                  L 0,16
+                "
+            />
+          </svg>
+          <h4 class="a-browserDescription__title">
+            Description
+          </h4>
+          <p class="a-browserDescription__body --preload">
+            <?php echo $description; ?>
+          </p>
+        </div>
       </div>
     <?php
     endif;
