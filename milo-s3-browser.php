@@ -174,9 +174,11 @@ add_action( 'save_post', 'milo_set_password' );
  * Public Functionality
  */
 
-// Registers the shortcode and directory listing function
+// Registers the shortcode and directory functions
 require 'app/post-types/browser/directory-listing.php';
 require 'app/post-types/browser/shortcode.php';
+require 'app/post-types/browser/download-modal.php';
+require 'app/post-types/browser/modal-listing.php';
 
 // Registers the styles and scripts used in public templates
 function milo_register_scripts() {
