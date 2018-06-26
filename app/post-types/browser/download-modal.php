@@ -19,10 +19,13 @@ function milo_download_modal( $id, $name, $size, $file, $link, $description ) {
     </div>
     <img class="m-downloadDialog__icon" src="<?php echo get_png($file); ?>" />
     <div class="m-downloadDialog__masthead">
-      <h3 class="m-downloadDialog__name">File Name: <?php echo $name; ?></h3>
+      <h3 class="m-downloadDialog__name">
+        <a href="<?php echo $link; ?>" target="_blank" download> File Name: <?php echo $name; ?></a>
+      </h3>
       <h4 class="m-downloadDialog__size">File Size: <?php echo formatBytes($size); ?></h4>
+      <p class="m-downloadDialog__url">Shareable URL:</p>
+      <code class="m-downloadDialog__code"><?php echo $url . '#download-' . $id; ?></code>
     </div>
-    <p class="m-downloadDialog__url">Shareable URL: <code class="m-downloadDialog__url--code"><?php echo $url . '#download-' . $id; ?></code></p>
 
     <?php
     // If there is a description, display it
@@ -52,7 +55,7 @@ function milo_download_modal( $id, $name, $size, $file, $link, $description ) {
     <a class="m-downloadDialog__button" href="<?php echo $link; ?>" target="_blank" download>
       <div class="m-downloadDialog__link">Download</div>
     </a>
-    <p class="m-downloadDialog__ieDisclosure --is-hidden">It looks like you're using Internet Explorer. Some download functionality may be different than expected in this browser, which is explained in <a class="m-downloadDialog__textLink" href="" target="_blank" download>this guide</a></p>
+    <p class="m-downloadDialog__ieDisclosure --is-hidden">It looks like you're using Internet Explorer. Some download functionality may be different than expected in this browser, which is explained in <a class="m-downloadDialog__textLink" href="<?php the_field('milo_sidebar_explorer', 'option')['url']; ?>" target="_blank" download>this guide</a></p>
   </dialog>
   <?php
   return;
