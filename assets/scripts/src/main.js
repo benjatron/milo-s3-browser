@@ -12,9 +12,10 @@ jQuery(document).ready(function() {
   jQuery('.m-fileList.--preload').addClass('--is-collapsed').slideToggle(0).removeClass('--preload');
   jQuery('.a-browserDescription__body').slideToggle(0).removeClass('--preload');
 
-  // If the user is on IE, show the IE guide download
+  // If the user is on IE, show IE-related disclosures
   if( navigator.userAgent.includes('MSIE') ){
     jQuery('#milo-sidebar-ie').removeClass('--hidden');
+    jQuery('.m-downloadDialog__ieDisclosure').removeClass('--is-hidden');
   }
 
   // Login modal toggles
@@ -34,13 +35,15 @@ jQuery(document).ready(function() {
   // Download modal toggling
   jQuery('.a-browserItem__text--title').click(function() {
     let $id = "".concat( 'download-', jQuery(this).attr('href').split('-').slice(1,2) );
-    // console.log($id);
     document.getElementById($id).showModal();
   });
   jQuery('.a-browserButton').click(function() {
     let $id = "".concat( 'download-', jQuery(this).attr('href').split('-').slice(1,2) );
-    // console.log($id);
     document.getElementById($id).showModal();
+  });
+  jQuery('.m-downloadDialog__close').click(function() {
+    let $id = jQuery(this).parent().attr('id');
+    document.getElementById($id).close();
   });
 
   // Controls the opening and closing of the folder icon
