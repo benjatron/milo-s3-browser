@@ -1,39 +1,50 @@
 <?php
 // Returns the file that is the newest, given the same folder
-// Finds the file within the object array
 function milo_get_latest( $needle, $haystack) {
 
-  function milo_objectArray_search( $needle, $haystack, $key ){
-    for( $i=0; $i<count($haystack); $i++ ):
-      if( $needle == $haystack[$i][$key] ):
-        return $haystack[$i];
-      endif;
-    endfor;
-  }
-  $file = milo_objectArray_search($needle, $haystack, 'path');
+  // Splits the file into a prefix, short name, version, and file type
+  function milo_file_parser( $file ) {
+    // If the file is in a folder, separate that out
+    $prefixParts = array();
+    if( strpos($file, '/') !== false ):
+      $result = array();
+      $prefixParts = explode( '/', $file);
 
-  // Assigns a filename to a file, version, and file type from an array
-  function milo_fileNameSplit($array) {
-    $fileParts = explode( ' ', $array['name'] );
-
-    // Merge all but last values into the file name
-    $file = '';
-    if( strpos($array['name'], ' ') !== false ):
-      for( $i=0; $i<(count($fileParts)-1); $i++ ):
-        $file .= $fileParts[$i] . ' ';
+      for( $i=0; $i<(count($prefixParts)-1); $i++ ):
+        $prefix .= $prefixParts[$i] . '/';
       endfor;
+      $result = $prefixParts[count($prefixParts)-1];
     else:
-      $file = $array['name'];
+      $prefix = '';
+      $result = $file;
     endif;
-    $array['short_name'] = $file;
 
-    // Assigns version and file type
-    $parts = explode( '.', $fileParts[(count($fileParts)-1)] );
-    $array['version'] = $parts[0];
-    $array['type'] = $parts[1];
-    return $array;
+
+    // If the name contains a space, splits it
+    // into the name and version/file type
+    $name = '';
+    $version = '';
+    $type = '';
+    if( strpos( $result, ' ' ) !== false ):
+      $nameParts = explode( ' ', $result );
+      for( $i=0; $i<(count($nameParts)-1); $i++ ):
+        $name .= $nameParts[$i] . ' ';
+      endfor;
+      $name = trim($name);
+      $version = explode( '.', $nameParts[count($nameParts)-1] )[0];
+      $type = explode( '.', $nameParts[count($nameParts)-1] )[1];
+    else:
+      $name = explode( '.', $result)[0];
+      $type = explode( '.', $result)[1];
+    endif;
+    return array(
+      'prefix' => $prefix,
+      'short_name' => $name,
+      'version' => $version,
+      'type' => $type
+    );
   }
-  $expandedFile = milo_fileNameSplit($file);
+  $startingFile = milo_file_parser( $needle );
 
   // Finds all files with the same prefix and short_name in an array
   function milo_find_similarFiles( $file, $haystack ) {
@@ -57,21 +68,20 @@ function milo_get_latest( $needle, $haystack) {
 
     return $results;
   }
-  $similarFiles = milo_find_similarFiles($expandedFile, $haystack);
+  $similarFiles = milo_find_similarFiles($startingFile, $haystack);
 
   // Expands an array of files
   function milo_expandSimilars( $array ) {
-    $results = array();
-    foreach($array as $file ):
-      $results[] = milo_filenameSplit($file);
-    endforeach;
+    $reults = array();
+    for( $i=0; $i<count($array); $i++ ):
+    $results[] = array_merge( $array[$i], milo_file_parser($file['path']));
+    endfor;
     return $results;
   }
   $expandedSimilars = milo_expandSimilars($similarFiles);
 
   // Finds the file with the highest version number in the array
   function milo_get_highest_version( $array ) {
-
     // Finds the highest version
     $versions = array();
     foreach( $array as $file ):
