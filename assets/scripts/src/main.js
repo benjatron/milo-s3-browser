@@ -16,6 +16,7 @@ jQuery(document).ready(function() {
   if( navigator.userAgent.includes('MSIE') ){
     jQuery('#milo-sidebar-ie').removeClass('--hidden');
     jQuery('.m-downloadDialog__ieDisclosure').removeClass('--is-hidden');
+    jQuery('.o-fileLanding__ieDisclosure').removeClass('--is-hidden');
   }
 
   // Login modal toggles
