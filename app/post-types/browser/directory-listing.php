@@ -1,6 +1,7 @@
 <?php
 // Recursive function to display the directory
 function milo_directory($directory, &$objectArray) {
+  global $post;
   // Creates the encapsulating list
   echo '<ul class="m-fileList">';
 
@@ -27,6 +28,7 @@ function milo_directory($directory, &$objectArray) {
       $id = $directory[$item]['id'];
       $link = $directory[$item]['link'];
       $name = $directory[$item]['name'];
+      $path = $directory[$item]['path'];
       $size = $directory[$item]['size'];
 
       $fileTypes = array(
@@ -85,14 +87,14 @@ function milo_directory($directory, &$objectArray) {
           ?>
           <img class="a-browserItem__icon" src="<?php echo get_png($file); ?>" />
           <h3 class="a-browserItem__text">
-            <a class="a-browserItem__text--title" href="#download-<?php echo $id; ?>">
+            <a class="a-browserItem__text--title" href="<?php echo milo_get_domain() .  'milo-' . $post->post_name . '?u=' . urlencode($path); ?>" target="_blank">
               <?php echo $name; ?>
             </a>
             <br/>
-            Size: <?php echo formatBytes($size); ?><span class="a-browserItem__text--spacer"></span>Time: <?php echo downloadTime($size); ?>
+            Size: <?php echo formatBytes($size); ?>
           </h3>
         </div>
-        <a class="a-browserButton" href="#download-<?php echo $id; ?>">
+        <a class="a-browserButton" href="<?php echo milo_get_domain() .  'milo-' . $post->post_name . '?u=' . urlencode($path); ?>" target="_blank">
           <div class="a-browserButton__link">Download</div>
         </a>
 
