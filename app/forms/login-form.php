@@ -1,9 +1,15 @@
 <?php
 function milo_password_form() {
   global $post;
+  $post_slug = $post->post_name;
   if(
     strpos(get_page_template_slug(), 'browser-dashboard') ||
-    strpos(get_page_template_slug(), 'browser-single')
+    strpos(get_page_template_slug(), 'browser-single') ||
+    ($post_slug ==
+      'milo-content' ||
+      'milo-software' ||
+      'milo-videos'
+    )
   ):
     $checkLabel = get_field('milo_login_tosLabel', 'option');
     $checkLink = get_field('milo_login_tosLink', 'option');
