@@ -1,0 +1,73 @@
+// Styles for the landing page for downloads
+.o-fileLanding {
+  align-content: center;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 960px;
+  position: relative;
+  width: calc( 100% - 360px );
+
+  .o-fileLanding__icon {
+    height: 8rem;
+    width: 8rem;
+  }
+
+  .o-fileLanding__masthead {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 2rem;
+    width: calc( 100% - 12rem );
+  }
+
+  .o-fileLanding__size,
+  .o-fileLanding__url {
+    margin: 0;
+    padding-top: .5rem;
+  }
+
+  .o-fileLanding__code {
+    background-color: $gray-light;
+    padding: .25rem .5rem;
+  }
+
+  .o-fileLanding__link {
+    background-color: $blue;
+    border: .125rem solid $blue-light-clear;
+    color: $white;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: .125rem;
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    transition: background-color 700ms ease,
+      border 700ms ease,
+      color 700ms ease;
+
+    &:hover {
+      border: .125rem solid $blue;
+      background-color: $white;
+      color: $black;
+    }
+  }
+
+  .o-fileLanding__ieDisclosure {
+    color: $gray-dark;
+    display: inline;
+    margin: .5rem 2rem 1rem;
+    text-align: center;
+
+    &.--is-hidden {
+      display: none;
+    }
+  }
+
+  .o-fileLanding__textLink {
+    text-decoration: underline;
+  }
+}
