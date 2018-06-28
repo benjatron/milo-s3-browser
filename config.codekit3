@@ -65,6 +65,20 @@
 		"oAP": "\/app\/helpers\/download-time.php",
 		"oF": 0
 		},
+	"\/app\/helpers\/get-domain.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/helpers\/get-domain.php",
+		"oF": 0
+		},
+	"\/app\/helpers\/get-latest.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/helpers\/get-latest.php",
+		"oF": 0
+		},
 	"\/app\/helpers\/get-png.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -869,6 +883,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/assets\/styles\/src\/partials\/dist\/_o-fileBrowser.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/styles\/src\/partials\/organisms\/_o-fileLanding.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/src\/partials\/dist\/_o-fileLanding.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
