@@ -1,6 +1,7 @@
 // Styles for the browser button
 .a-browserButton {
-  height: 100%;
+  bottom: 0;
+  top: 0;
   width: 8rem;
 
   .a-browserButton__link {
@@ -9,7 +10,8 @@
     color: $white-clear;
     display: flex;
     flex-direction: column;
-    height: 3.75rem;
+    height: 100%;
+    min-height: 3.75rem;
     justify-content: center;
     text-align: center;
     text-transform: uppercase;

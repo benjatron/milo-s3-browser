@@ -6,6 +6,10 @@
   padding-top: 2rem;
   width: calc( 100% - 360px );
 
+  .o-browserDashboard__breadcrumbs {
+    padding-left: 1rem;
+  }
+
   .o-browserDashboard__grid {
     align-content: center;
     display: flex;
