@@ -12,6 +12,19 @@ function milo_browser_pages() {
     'meta_key' => '_wp_page_template',
     'meta_value' => 'template-browser-page.php'
   ) );
-  $pageGroup = array_merge( $dashboards, $browsers );
+
+  // An array of the page slugs for landing pages
+  $slugs = array(
+    'milo-content',
+    'milo-software',
+    'milo-videos'
+  );
+  // Add these pages to an array
+  $pages = array();
+  foreach ( $slugs as $page ):
+    $pages[] = get_page_by_path($page)->ID;
+  endforeach;
+
+  $pageGroup = array_merge( $dashboards, $browsers, $pages );
   return $pageGroup;
 }
