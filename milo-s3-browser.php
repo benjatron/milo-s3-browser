@@ -37,6 +37,8 @@ require 'app/helpers/get-svg.php';
 require 'app/helpers/get-png.php';
 // Generates a cryptographically secure string
 require 'app/helpers/password-generator.php';
+// Sets the expiration time for post passwords
+require 'app/helpers/post-password-expire.php';
 
 /**
  * Admin Functionality

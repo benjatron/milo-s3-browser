@@ -100,6 +100,13 @@
 		"oAP": "\/app\/helpers\/password-generator.php",
 		"oF": 0
 		},
+	"\/app\/helpers\/post-password-expire.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/helpers\/post-password-expire.php",
+		"oF": 0
+		},
 	"\/app\/post-types\/browser\/directory-listing.php": {
 		"cB": 0,
 		"ft": 8192,
