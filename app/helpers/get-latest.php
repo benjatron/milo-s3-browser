@@ -72,7 +72,7 @@ function milo_get_latest( $needle, $haystack) {
 
   // Expands an array of files
   function milo_expandSimilars( $array ) {
-    $reults = array();
+    $results = array();
     for( $i=0; $i<count($array); $i++ ):
     $results[] = array_merge( $array[$i], milo_file_parser($file['path']));
     endfor;
