@@ -4,16 +4,19 @@
 jQuery(document).ready(function() {
   // Process dialog elements
   const dialog = document.querySelectorAll('dialog');
-  dialog.forEach(function(element) {
-    dialogPolyfill.registerDialog(element);
-  });
+  for( let e = 0; e < dialog.length; e++) {
+    dialogPolyfill.registerDialog(dialog[e]);
+  }
+  // dialog.forEach(function(element) {
+  //   dialogPolyfill.registerDialog(element);
+  // });
 
   // Applies preload changes
   jQuery('.m-fileList.--preload').addClass('--is-collapsed').slideToggle(0).removeClass('--preload');
   jQuery('.a-browserDescription__body').slideToggle(0).removeClass('--preload');
 
   // If the user is on IE, show IE-related disclosures
-  if( navigator.userAgent.includes('MSIE') ){
+  if( navigator.userAgent.indexOf('MSIE') ){
     jQuery('#milo-sidebar-ie').removeClass('--hidden');
     jQuery('.m-downloadDialog__ieDisclosure').removeClass('--is-hidden');
     jQuery('.o-fileLanding__ieDisclosure').removeClass('--is-hidden');
@@ -25,26 +28,6 @@ jQuery(document).ready(function() {
   });
   jQuery('.a-loginModal__close').click(function() {
     document.getElementById('milo-login-modal').close();
-  });
-
-  // If a download modal is in the url, open it
-  if( window.location.href.indexOf('#download-') > 0 ) {
-    let $id = window.location.href.split('#');
-    document.getElementById($id[1]).showModal();
-  }
-
-  // Download modal toggling
-  jQuery('.a-browserItem__text--title').click(function() {
-    let $id = "".concat( 'download-', jQuery(this).attr('href').split('-').slice(1,2) );
-    document.getElementById($id).showModal();
-  });
-  jQuery('.a-browserButton').click(function() {
-    let $id = "".concat( 'download-', jQuery(this).attr('href').split('-').slice(1,2) );
-    document.getElementById($id).showModal();
-  });
-  jQuery('.m-downloadDialog__close').click(function() {
-    let $id = jQuery(this).parent().attr('id');
-    document.getElementById($id).close();
   });
 
   // Controls the opening and closing of the folder icon
