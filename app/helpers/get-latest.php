@@ -19,7 +19,6 @@ function milo_get_latest( $needle, $haystack) {
       $result = $file;
     endif;
 
-
     // If the name contains a space, splits it
     // into the name and version/file type
     $name = '';
@@ -37,7 +36,10 @@ function milo_get_latest( $needle, $haystack) {
       $name = explode( '.', $result)[0];
       $type = explode( '.', $result)[1];
     endif;
+
+    // Sets our return values
     return array(
+      'name' => $result,
       'prefix' => $prefix,
       'short_name' => $name,
       'version' => $version,
@@ -74,13 +76,13 @@ function milo_get_latest( $needle, $haystack) {
   function milo_expandSimilars( $array ) {
     $results = array();
     for( $i=0; $i<count($array); $i++ ):
-    $results[] = array_merge( $array[$i], milo_file_parser($file['path']));
+      $results[] = array_merge( $array[$i], milo_file_parser($array[$i]['path']));
     endfor;
     return $results;
   }
   $expandedSimilars = milo_expandSimilars($similarFiles);
 
-  // Finds the file with the highest version number in the array
+  // Function to find file with the highest version number in the array
   function milo_get_highest_version( $array ) {
     // Finds the highest version
     $versions = array();
@@ -98,6 +100,25 @@ function milo_get_latest( $needle, $haystack) {
 
     return $result;
   }
-  $newestVersion = milo_get_highest_version( $expandedSimilars );
-  return $newestVersion;
+
+  // Function to check if starting file is in list of similars
+  // If it is, that is returned. If not, the highest version in
+  // the similars array is returned
+  function milo_similar_check( $needle, $haystack ) {
+    $result = array();
+    foreach( $haystack as $file ):
+      if( $needle['name'] == $file['name'] ):
+        $result = $file;
+        return $result;
+        break;
+      endif;
+    endforeach;
+
+    if( empty($result) ):
+      return milo_get_highest_version( $haystack );
+    endif;
+  }
+  $resultingFile = milo_similar_check( $startingFile, $expandedSimilars );
+
+  return $resultingFile;
 }
