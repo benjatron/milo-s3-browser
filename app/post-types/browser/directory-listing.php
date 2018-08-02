@@ -95,7 +95,8 @@ function milo_directory($directory, &$objectArray) {
           </h3>
         </div>
         <a class="a-browserButton" href="<?php echo milo_get_domain() .  'milo-' . $post->post_name . '?u=' . urlencode($path); ?>" target="_blank">
-          <div class="a-browserButton__link">Download</div>
+          <div class="a-browserButton__link">Continue to download <svg class="
+          a-browserButton__icon"><?php get_svg('download'); ?></svg></div>
         </a>
 
         <?php
