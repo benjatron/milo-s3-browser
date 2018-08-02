@@ -5,14 +5,19 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 4rem;
+  padding-top: 4rem;
   text-align: center;
   width: 360px;
 
   .o-browserSidebar__section {
-    padding: 2rem 2rem 0;
+    padding: 0 2rem 2rem;
+  }
 
-    &.--hidden {
-      display: none;
+  #milo-sidebar-ie {
+    display: none;
+
+    @supports not (display: flex) {
+      display: inherit;
     }
   }
 }
