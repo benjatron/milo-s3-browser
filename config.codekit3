@@ -366,6 +366,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/images\/src\/download.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/download.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/images\/src\/file-alt.png": {
 		"ft": 32768,
 		"iS": 2634,
