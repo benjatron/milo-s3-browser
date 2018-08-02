@@ -7,20 +7,10 @@ jQuery(document).ready(function() {
   for( let e = 0; e < dialog.length; e++) {
     dialogPolyfill.registerDialog(dialog[e]);
   }
-  // dialog.forEach(function(element) {
-  //   dialogPolyfill.registerDialog(element);
-  // });
 
   // Applies preload changes
   jQuery('.m-fileList.--preload').addClass('--is-collapsed').slideToggle(0).removeClass('--preload');
   jQuery('.a-browserDescription__body').slideToggle(0).removeClass('--preload');
-
-  // If the user is on IE, show IE-related disclosures
-  if( navigator.userAgent.indexOf('MSIE') ){
-    jQuery('#milo-sidebar-ie').removeClass('--hidden');
-    jQuery('.m-downloadDialog__ieDisclosure').removeClass('--is-hidden');
-    jQuery('.o-fileLanding__ieDisclosure').removeClass('--is-hidden');
-  }
 
   // Login modal toggles
   jQuery('.o-browserLogin__link').click(function() {
