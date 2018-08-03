@@ -145,6 +145,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/images\/dist\/download.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/assets\/images\/dist\/download.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/images\/dist\/file-alt.png": {
 		"ft": 32768,
 		"iS": 2634,
@@ -616,7 +626,7 @@
 		},
 	"\/assets\/styles\/dist\/main.css": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
@@ -633,7 +643,7 @@
 		},
 	"\/assets\/styles\/src\/main.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -646,7 +656,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/_globals.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -659,7 +669,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/_helpers.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -672,7 +682,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/_variables.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -685,7 +695,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/atoms\/_a-browserBreadcrumbs.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -698,7 +708,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/atoms\/_a-browserButton.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -711,7 +721,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/atoms\/_a-browserDescription.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -724,7 +734,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/atoms\/_a-browserItem.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -737,7 +747,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/atoms\/_a-contactSupport.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -750,7 +760,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/atoms\/_a-explorerDownload.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -763,7 +773,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/atoms\/_a-fileFolder.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -776,7 +786,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/atoms\/_a-loginModal.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -789,7 +799,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/atoms\/_a-supportGuides.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -802,7 +812,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/molecules\/_m-browserForm.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -815,7 +825,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/molecules\/_m-downloadDialog.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -828,7 +838,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/molecules\/_m-fileList.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -841,7 +851,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/molecules\/_m-gridCell.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -854,7 +864,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/organisms\/_o-browserDashboard.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -867,7 +877,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/organisms\/_o-browserLogin.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -880,7 +890,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/organisms\/_o-browserSidebar.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -893,7 +903,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/organisms\/_o-fileBrowser.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -906,7 +916,7 @@
 		},
 	"\/assets\/styles\/src\/partials\/organisms\/_o-fileLanding.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -925,7 +935,7 @@
 		},
 	"\/assets\/styles\/src\/vendor\/_dialog-polyfill.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -2822,7 +2832,7 @@
 		"createSourceMap": 0,
 		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0
+		"shouldRunBless": 1
 		},
 	"languageDefaultsGIF": {
 		"autoOutputAction": 0,
@@ -2970,7 +2980,7 @@
 		"decimalPrecision": 10,
 		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0,
+		"shouldRunBless": 1,
 		"useLibsass": 1
 		},
 	"languageDefaultsSLIM": {

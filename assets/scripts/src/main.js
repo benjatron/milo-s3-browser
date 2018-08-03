@@ -22,7 +22,7 @@ jQuery(document).ready(function() {
 
   // Controls the opening and closing of the folder icon
   jQuery('.a-fileFolder').click(function() {
-    jQuery(this).find('.a-fileFolder__icon').toggleClass('--is-hidden');
+    jQuery(this).find('.a-fileFolder__icon').toggleClass('a-fileFolder__icon--hidden');
     jQuery(this).siblings('.m-fileList').toggleClass('--is-clicked').slideToggle();
   });
 

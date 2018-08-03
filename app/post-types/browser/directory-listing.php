@@ -12,7 +12,7 @@ function milo_directory($directory, &$objectArray) {
       <li class="m-fileList__item m-fileList__item--hasChildren">
         <div class="a-fileFolder">
           <img class="a-fileFolder__icon" src="<?php echo get_png('folder'); ?>" />
-          <img class="a-fileFolder__icon a-fileFolder__icon--open --is-hidden" src="<?php echo get_png('folder-open'); ?>" />
+          <img class="a-fileFolder__icon a-fileFolder__icon--open a-fileFolder__icon--hidden" src="<?php echo get_png('folder-open'); ?>" />
           <h3 class="a-fileFolder__folder">
             <?php echo $item; ?>
           </h3>
