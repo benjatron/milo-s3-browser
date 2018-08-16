@@ -1,0 +1,18 @@
+// Styles for the logout button in the sidebar
+.a-supportLogout {
+  padding-top: 8rem;
+
+  .a-supportLogout__button {
+    background-color: $gray-blue;
+    color: $gray-light;
+    font-size: .8rem;
+    transition: background-color 700ms ease,
+      color 700ms ease;
+    width: 100%;
+
+    &:hover {
+      background-color: $gray-dark;
+      color: $gray-medium;
+    }
+  }
+}
