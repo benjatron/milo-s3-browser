@@ -6,8 +6,8 @@ function milo_directory($directory, $objectArray) {
   ?>
   <ul class="m-fileList">
     <?php
+    // Displays all directories first
     foreach( array_keys($directory) as $item ):
-
       // If $item has children (i.e. is a directory), repeat the function on it
       if( $directory[$item]['children'] ):
       ?>
@@ -24,8 +24,13 @@ function milo_directory($directory, $objectArray) {
           </ul>
         </li>
       <?php
+      endif;
+    endforeach;
+
+    // Displays all non-directory files
+    foreach( array_keys($directory) as $item ):
       // If $item is a normal file, display that
-      else:
+      if( !$directory[$item]['children'] ):
         $description = '';
         $id = $directory[$item]['id'];
         $link = $directory[$item]['link'];
