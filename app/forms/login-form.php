@@ -12,7 +12,7 @@ function milo_password_form() {
     )
   ):
     $checkLabel = get_field('milo_login_tosLabel', 'option');
-    $checkLink = get_field('milo_login_tosLink', 'option');
+    $checkLink = get_field('milo_login_tosPage', 'option');
     $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
     $o = '<form class="m-browserForm protected-post-form" action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post"><label class="m-browserForm__label m-browserForm__label--password" for="' . $label . '">' . __( "Password" ) . ' </label><input class="m-browserForm__pass" name="post_password" id="' . $label . '" placeholder="Enter your password" type="password" size="20" /><input class="m-browserForm__checkbox" name="tos_checkbox" id="tos-checkbox" type="checkbox"><label class="m-browserForm__label m-browserForm__label--check" for="tos-checkbox">I agree to the <a class="m-browserForm__link" href="' . $checkLink . '" target="_blank">' . $checkLabel . '</a></label><input class="m-browserForm__button --inactive" type="submit" name="Submit" value="' . esc_attr__( "Sign In" ) . '" />
     </form>
