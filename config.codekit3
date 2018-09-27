@@ -218,6 +218,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/assets/images/dist/file-exe.png": {
+		"ft": 32768,
+		"iS": 3580,
+		"oA": 0,
+		"oAP": "/assets/images/dist/file-exe.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/images/dist/file-image.png": {
 		"ft": 32768,
 		"iS": 3432,
@@ -448,6 +459,17 @@
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"/assets/images/src/file-exe.png": {
+		"ft": 32768,
+		"iS": 3580,
+		"oA": 0,
+		"oAP": "/assets/images/dist/file-exe.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/assets/images/src/file-image.png": {
 		"ft": 32768,
