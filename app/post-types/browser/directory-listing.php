@@ -48,6 +48,9 @@ function milo_directory($directory, $objectArray) {
           'document' => array(
             'key', 'odp', 'pps', 'ppt', 'pptx', 'ods', 'xlr', 'xls', 'xlsx', 'doc', 'docx', 'rtf', 'tex', 'txt', 'wks', 'wps', 'wpd'
           ),
+          'executable' => array(
+            'exe'
+          ),
           'image' => array(
             'ai', 'bmp', 'eps', 'gif', 'ico', 'jpg', 'jpeg', 'png', 'ps', 'psd', 'svg', 'tif', 'tiff'
           ),
@@ -73,13 +76,15 @@ function milo_directory($directory, $objectArray) {
           <div class="a-browserItem">
             <?php
             // Retrieves the icon based on file extension
-            $ext = end(explode('.', $name));
+            $ext = strtolower( end( explode( '.', $name ) ) );
             if( in_array( $ext, $fileTypes['archive'] ) ):
               $file = 'file-archive';
             elseif( in_array( $ext, $fileTypes['audio'] ) ):
               $file = 'file-audio';
             elseif( in_array( $ext, $fileTypes['document'] ) ):
               $file = 'file-alt';
+            elseif( in_array( $ext, $fileTypes['executable'] ) ):
+                $file = 'file-exe';
             elseif( in_array( $ext, $fileTypes['image'] ) ):
               $file = 'file-image';
             elseif( in_array( $ext, $fileTypes['milo'] ) ):
