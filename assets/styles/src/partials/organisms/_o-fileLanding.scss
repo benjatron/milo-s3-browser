@@ -47,6 +47,12 @@
     word-wrap: break-word;
   }
 
+  .o-fileLanding__description {
+    margin: 2rem auto;
+    text-align: center;
+    width: 100%;
+  }
+
   .o-fileLanding__link {
     background-color: $blue;
     border: .125rem solid $blue-light-clear;
@@ -66,6 +72,10 @@
       background-color: $white;
       color: $black;
     }
+  }
+
+  .o-fileLanding__lower {
+    width: 100%;
   }
 
   .o-fileLanding__ieDisclosure {
