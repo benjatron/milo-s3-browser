@@ -84,7 +84,7 @@ function milo_directory($directory, $objectArray) {
             elseif( in_array( $ext, $fileTypes['document'] ) ):
               $file = 'file-alt';
             elseif( in_array( $ext, $fileTypes['executable'] ) ):
-                $file = 'file-exe';
+              $file = 'file-exe';
             elseif( in_array( $ext, $fileTypes['image'] ) ):
               $file = 'file-image';
             elseif( in_array( $ext, $fileTypes['milo'] ) ):
