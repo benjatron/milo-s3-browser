@@ -77,4 +77,9 @@ jQuery(document).ready(function() {
       jQuery(this).siblings('.m-browserForm__button').addClass('--inactive');
     }
   });
+
+  // Loads a CSS spinner when browser dashboard buttons are clicked
+  jQuery('.m-gridCell__link').click(function() {
+    document.getElementById('milo-loading-modal').showModal();
+  });
 });
