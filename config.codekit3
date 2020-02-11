@@ -1105,6 +1105,14 @@
 		"oA": 0,
 		"oAP": "/views/admin/browser-security.php",
 		"oF": 0
+		},
+	"/yarn.lock": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/yarn.lock",
+		"oF": 0
 		}
 	},
 "hooks": [

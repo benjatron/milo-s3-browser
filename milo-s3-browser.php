@@ -32,7 +32,7 @@ require 'app/helpers/get-domain.php';
 // Gets the latest version of a file
 require 'app/helpers/get-latest.php';
 // Imports the contents of an SVG file
-require 'app/helpers/get-svg.php';
+// require 'app/helpers/get-svg.php';
 // Imports the contents of a PNG file
 require 'app/helpers/get-png.php';
 // Generates a cryptographically secure string
