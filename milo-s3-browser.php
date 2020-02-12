@@ -32,9 +32,9 @@ require 'app/helpers/get-domain.php';
 // Gets the latest version of a file
 require 'app/helpers/get-latest.php';
 // Imports the contents of an SVG file
-// require 'app/helpers/get-svg.php';
+require 'app/helpers/get-milo-svg.php';
 // Imports the contents of a PNG file
-require 'app/helpers/get-png.php';
+require 'app/helpers/get-milo-png.php';
 // Generates a cryptographically secure string
 require 'app/helpers/password-generator.php';
 // Sets the expiration time for post passwords
@@ -188,9 +188,9 @@ require 'app/post-types/browser/modal-listing.php';
 
 // Registers the styles and scripts used in public templates
 function milo_register_scripts() {
-  wp_enqueue_script( 's3-browser', plugins_url( 'assets/scripts/dist/main.min.js', __FILE__), array('sage/js') );
+  wp_enqueue_script( 's3-browser', plugins_url( 'assets/scripts/dist/main.min.js', __FILE__), array('universal') );
 
-  wp_register_style('s3-browser', plugins_url( 'assets/styles/dist/main.css', __FILE__), array('sage/css') );
+  wp_register_style('s3-browser', plugins_url( 'assets/styles/dist/main.css', __FILE__), array('universal') );
   wp_enqueue_style('s3-browser');
 }
 add_action( 'wp_enqueue_scripts', 'milo_register_scripts');
