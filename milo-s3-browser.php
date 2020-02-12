@@ -39,6 +39,8 @@ require 'app/helpers/get-milo-png.php';
 require 'app/helpers/password-generator.php';
 // Sets the expiration time for post passwords
 require 'app/helpers/post-password-expire.php';
+// Displays a download block
+require 'app/helpers/the-download-block.php';
 
 /**
  * Admin Functionality
