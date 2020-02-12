@@ -74,7 +74,7 @@ function the_download_block( $bucket, $queriedFile ) {
 
   // Gets the query value if it is not set
   if( !$queriedFile ):
-    $queriedFile = urldecode( substr( parse_url( $_SERVER[REQUEST_URI], PHP_URL_QUERY), 2) );
+    $queriedFile = urldecode( substr( parse_url( $_SERVER['REQUEST_URI'], PHP_URL_QUERY), 2) );
   endif;
 
   // Gets the latest version of the queried file and assigns values
