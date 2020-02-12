@@ -13,8 +13,8 @@ function milo_directory($directory, $objectArray) {
       ?>
         <li class="m-fileList__item m-fileList__item--hasChildren">
           <div class="a-fileFolder">
-            <img class="a-fileFolder__icon" src="<?php echo get_png('folder'); ?>" />
-            <img class="a-fileFolder__icon a-fileFolder__icon--open a-fileFolder__icon--hidden" src="<?php echo get_png('folder-open'); ?>" />
+            <img class="a-fileFolder__icon" src="<?php echo get_milo_png('folder'); ?>" />
+            <img class="a-fileFolder__icon a-fileFolder__icon--open a-fileFolder__icon--hidden" src="<?php echo get_milo_png('folder-open'); ?>" />
             <h3 class="a-fileFolder__folder">
               <?php echo $item; ?>
             </h3>
@@ -97,7 +97,7 @@ function milo_directory($directory, $objectArray) {
               $file = 'file';
             endif;
             ?>
-            <img class="a-browserItem__icon" src="<?php echo get_png($file); ?>" />
+            <img class="a-browserItem__icon" src="<?php echo get_milo_png($file); ?>" />
             <h3 class="a-browserItem__text">
               <a class="a-browserItem__text--title" href="<?php echo milo_get_domain() .  'milo-' . $post->post_name . '?u=' . urlencode($path); ?>" target="_blank">
                 <?php echo $name; ?>
@@ -108,7 +108,7 @@ function milo_directory($directory, $objectArray) {
           </div>
           <a class="a-browserButton" href="<?php echo milo_get_domain() .  'milo-' . $post->post_name . '?u=' . urlencode($path); ?>" target="_blank">
             <div class="a-browserButton__link">Continue to download <svg class="
-          a-browserButton__icon"><?php get_svg('download'); ?></svg></div>
+          a-browserButton__icon"><?php get_milo_svg('download'); ?></svg></div>
           </a>
 
           <?php

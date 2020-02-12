@@ -36,7 +36,9 @@
 
   .a-browserItem__text {
     color: $gray;
+    font-size: 1rem;
     font-weight: 400;
+    margin-top: .75rem;
     padding-left: .5rem;
     transition: color 700ms ease;
 

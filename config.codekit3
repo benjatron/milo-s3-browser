@@ -89,20 +89,20 @@
 		"oAP": "/app/helpers/get-latest.php",
 		"oF": 0
 		},
-	"/app/helpers/get-png.php": {
+	"/app/helpers/get-milo-png.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/app/helpers/get-png.php",
+		"oAP": "/app/helpers/get-milo-png.php",
 		"oF": 0
 		},
-	"/app/helpers/get-svg.php": {
+	"/app/helpers/get-milo-svg.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/app/helpers/get-svg.php",
+		"oAP": "/app/helpers/get-milo-svg.php",
 		"oF": 0
 		},
 	"/app/helpers/password-generator.php": {
@@ -119,6 +119,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/app/helpers/post-password-expire.php",
+		"oF": 0
+		},
+	"/app/helpers/the-download-block.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/app/helpers/the-download-block.php",
 		"oF": 0
 		},
 	"/app/post-types/browser/directory-listing.php": {

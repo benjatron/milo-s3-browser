@@ -22,14 +22,20 @@
     width: 100%;
 
     .a-browserButton__icon {
+      fill: $white-clear;
       height: 1rem;
       margin: 0 auto;
+      transition: fill 700ms ease;
       width: 1rem;
     }
 
     &.--is-hovered {
       background-color: $blue;
       color: $white;
+
+      .a-browserButton__icon {
+        fill: $white;
+      }
     }
   }
 }
