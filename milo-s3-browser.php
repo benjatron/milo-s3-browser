@@ -20,6 +20,9 @@ Text Domain:  milo
 // Load vendor files
 require 'vendor/autoload.php';
 
+// Class autoload
+require 'app/classes/class-milo-support.php';
+
 /**
  * Helper Functions
  */
