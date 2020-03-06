@@ -20,6 +20,28 @@ Text Domain:  milo
 // Load vendor files
 require 'vendor/autoload.php';
 
+// Class autoload
+spl_autoload_register( 'milo_autoload_register' );
+
+// Allows for using MILO class
+function milo_autoload_register( $class ) {
+  // Ignore classes without the "MILO" prefix
+  if( strpos( $class, 'MILO' ) !== 0 ):
+    return null;
+  endif;
+
+  // Take the class name and replace the underscores with hyphens
+  $file = strtolower( str_replace( "_", "-", $class ) );
+
+  // Load the file, if it exists
+  $filename = plugins_url() . "/milo-s3-browser/app/classes/class-{$file}.php";
+  if( file_exists( $filename ) ):
+    require $filename;
+  endif;
+
+  return $filename;
+}
+
 /**
  * Helper Functions
  */
