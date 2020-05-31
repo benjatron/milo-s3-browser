@@ -202,3 +202,15 @@ add_action( 'wp_enqueue_scripts', 'milo_register_scripts');
 
 // Updates the login form for plugin pages
 require 'app/forms/login-form.php';
+
+/**
+ * For testing front-end templates:
+ */
+// $support = new MILO_Support();
+// $bucket = 'milo-range.videos';
+// $key = 'Documents/MILO Course Designer/MILO Green Screen Features.pdf';
+
+// var_dump( $support->get_buckets() );
+// var_dump( $support->get_objects( $bucket ) );
+// var_dump( $support->get_file( $key, $bucket ) );
+// var_dump( $support->get_password() );
