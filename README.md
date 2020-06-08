@@ -29,16 +29,16 @@ There are template files included that allow a query to be affected on an instan
 ---
 
 ## Front-End Example
-We can get an idea of how to use the ```MILO_Support``` class by how it is implemented on the front-end. For our purposes, we will assume the relevant templates are set at ```domain.com/app/functions/get_xxx```. Utilizing each of the methods we can find the values required for each of the other pages.
+We can get an idea of how to use the ```MILO_Support``` class by how it is implemented on the front-end. For our purposes, we will assume the relevant templates are set at ```domain.com/app/functions/get-xxx```. Utilizing each of the methods we can find the values required for each of the other pages.
 
-### ```domain.com/app/functions/get_password```
-Unlike the other methods, getting the post password doesn't really help outside of navigating a site using the plugin. To see this password, simply navigate to ```domain.com/app/functions/get_password```. The only text that displays should be the relevant post password.
+### ```domain.com/app/functions/get-password```
+Unlike the other methods, getting the post password doesn't really help outside of navigating a site using the plugin. To see this password, simply navigate to ```domain.com/app/functions/get-password```. The only text that displays should be the relevant post password.
 
-### ```domain.com/app/functions/get_buckets```
-The ```get_buckets``` method is the last one we have that does not require any query variables. Navigating to ```domain.com/app/functions/get_buckets``` will show us an array with all of the buckets we can use.
+### ```domain.com/app/functions/get-buckets```
+The ```get_buckets``` method is the last one we have that does not require any query variables. Navigating to ```domain.com/app/functions/get-buckets``` will show us an array with all of the buckets we can use.
 
-### ```domain.com/app/functions/get_objects```
-If we navigate to ```domain.com/app/functions/get_objects``` without properly-formed query, you'll note the following message is returned: "You must use a valid bucket name". If we update the URL with a "bucket" variable provided by the previous section, we instead get an array with all of the object keys for the AWS bucket. The format for this URL is ```domain.com/app/functions/get_buckets/?bucket=xxx```.
+### ```domain.com/app/functions/get-objects```
+If we navigate to ```domain.com/app/functions/get_objects``` without properly-formed query, you'll note the following message is returned: "You must use a valid bucket name". If we update the URL with a "bucket" variable provided by the previous section, we instead get an array with all of the object keys for the AWS bucket. The format for this URL is ```domain.com/app/functions/get-buckets/?bucket=xxx```.
 
-### ```domain.com/app/functions/get_file```
-Similarly to the ```get_objects``` example, if we navigate to ```domain.com/app/functions/get_file``` without the proper query variables set we get an error. However, if we provide a ```bucket=xxx``` variable statement things still don't work. We'll need not only a valid bucket name, retrieved via ```get_buckets```, but also a valid path, retrieved through ```get_objects```. With both of these together in the form of ```domain.com/app/functions/get_file/?bucket=xxx&path=yyy``` we see that the returned value is a string. This string can be placed in your navigation bar to immediately download the file identified by the ```path``` and ```bucket``` variables.
+### ```domain.com/app/functions/get-file```
+Similarly to the ```get_objects``` example, if we navigate to ```domain.com/app/functions/get-file``` without the proper query variables set we get an error. However, if we provide a ```bucket=xxx``` variable statement things still don't work. We'll need not only a valid bucket name, retrieved via ```get_buckets```, but also a valid path, retrieved through ```get_objects```. With both of these together in the form of ```domain.com/app/functions/get-file/?bucket=xxx&path=yyy``` we see that the returned value is a string. This string can be placed in your navigation bar to immediately download the file identified by the ```path``` and ```bucket``` variables.
